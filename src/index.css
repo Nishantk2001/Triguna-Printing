@@ -1,0 +1,29 @@
+/* Root Variables */
+:root {
+  --primary-color: #2563eb;
+  --secondary-color: #9333ea;
+  --text-color: #333;
+  --background-color: #2e4f46;
+  --border-radius: 8px;
+}
+
+/* Reset Default Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Default Font & Smooth Scrolling */
+html {
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Global Layout */
+body {
+  background: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
