@@ -1,7 +1,12 @@
 import styles from './contactbar.module.css';
-import { FaFacebook, FaLinkedin, FaYoutube, FaPhoneAlt } from 'react-icons/fa';
+import {
+  FaYoutubeSquare,
+  FaPhoneAlt,
+  FaTwitterSquare,
+  FaFacebookSquare,
+  FaLinkedin,
+} from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md';
-import { AiFillTwitterCircle } from 'react-icons/ai';
 
 export default function ContactBar() {
   return (
@@ -22,16 +27,16 @@ export default function ContactBar() {
       <div className={styles.menubar}>
         <div className={styles.socialMedia}>
           <a href="#" className={styles.socialIcon}>
-            <FaFacebook size={25} />
+            <FaFacebookSquare size={25} />
           </a>
           <a href="#" className={styles.socialIcon}>
-            <AiFillTwitterCircle size={25} />
+            <FaTwitterSquare size={25} />
           </a>
           <a href="#" className={styles.socialIcon}>
             <FaLinkedin size={25} />
           </a>
           <a href="#" className={styles.socialIcon}>
-            <FaYoutube size={25} />
+            <FaYoutubeSquare size={25} />
           </a>
         </div>
       </div>

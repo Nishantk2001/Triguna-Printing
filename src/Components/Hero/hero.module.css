@@ -1,122 +1,135 @@
 .hero {
-    display: flex;
-    align-items: center; 
-    height: 100vh; 
-    color: white;
-    padding-left: 7%;
-  }
-  
-  .sectionHero {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    border-radius: 8px;
-  }
-  
-  .firstline {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-  }
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  color: white;
+  padding-left: 7%;
+}
 
-  .firstline .line {
-    width: 30px;
-    height: 4px;
-    background-color: #E8B237;
-  }
+.sectionHero {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 8px;
+}
+.rightsection {
+  flex: 1;
+}
 
-  .firstline p {
-    font-family: inherit;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 40.61px;
-    letter-spacing: 15%;
-    color: #FFFFFF;
-  }
+.sectionRightHero {
+  width: 80%;
+  height: 600px;
+  background-color: white;
+}
 
-  .exp{
-    font-family: inherit;
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 56.25px;
-    letter-spacing: 9%;
-  }
+.firstline {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
 
-  .text {
-    font-family: "Playfair Display", serif;
-    font-weight: 400;
-    font-size: 48px;
-    line-height: 57.6px;
-    letter-spacing: 9%;
-    color: #E8B237;
-  }
+.firstline .line {
+  width: 30px;
+  height: 4px;
+  background-color: #e8b237;
+}
 
-  .text1 {
-    font-family: inherit;
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 56.25px;
-    letter-spacing: 9%;
-    color: #ffffff;
-  }
+.firstline p {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 40.61px;
+  letter-spacing: 15%;
+  color: #ffffff;
+}
 
-  .text2 {
-    font-family: inherit;
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 56.25px;
-    letter-spacing: 9%;
-    color: #ffffff;
-  }
+.exp {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56.25px;
+  letter-spacing: 9%;
+}
 
-  .paragraph {
-    max-width: 640px;
-    font-family: inherit;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 14.06px;
-    letter-spacing: 9%;
-  }
+.text {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 57.6px;
+  letter-spacing: 9%;
+  color: #e8b237;
+}
 
-  .customButton {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 20px;
-    border: none;
-    border-radius: 50px;
-    background-color: #E2AA34; /* Golden Yellow */
-    padding: 5px 10px;
-    position: relative;
-    max-width: 150px;
-    height: 40px;
-    cursor: pointer;
-    transition: 0.3s ease-in-out;
-    margin-top: 10px;
-  }
-  
-  .icon {
-    background-color: #2F4A3D; /* Dark Green */
-    color: white;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 16px;
-    position: absolute;
-    left: 5px;
-  }
-  
-  .btntext {
-    flex-grow: 1;
-    text-align: center;
-    font-family: inherit;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 18.75px;
-    letter-spacing: 1%;
-    color: black;
-  }
-  
+.text1 {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56.25px;
+  letter-spacing: 9%;
+  color: #ffffff;
+}
+
+.text2 {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56.25px;
+  letter-spacing: 9%;
+  color: #ffffff;
+}
+
+.paragraph {
+  max-width: 540px;
+  margin-block: 10px;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20.06px;
+  letter-spacing: 15%;
+}
+
+.customButton {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+  border: none;
+  border-radius: 50px;
+  /* background-color: #e2aa34; Golden Yellow */
+  /* padding: 0px 10px; */
+  position: relative;
+  max-width: 200px;
+  height: 52px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  margin-top: 10px;
+}
+
+.icon {
+  background-color: #2f4a3d; /* Dark Green */
+  color: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  position: absolute;
+  left: 6px;
+}
+
+.btntext {
+  background-color: #e2aa34; /* Golden Yellow */
+  /* flex-grow: 1; */
+  padding: 16.5px 25px;
+  border-radius: 50px;
+  text-align: center;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18.75px;
+  letter-spacing: 1%;
+  color: black;
+}

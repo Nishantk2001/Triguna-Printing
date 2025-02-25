@@ -1,42 +1,51 @@
 /* Main Contact Bar Container */
 .navbar {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background: #ffffff;
-    width: 100%;
-    min-height: 75px;
-    height: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #ffffff;
+  width: 100%;
+  min-height: 75px;
+  height: auto;
 }
 
 .img {
-    flex: 10;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  flex: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-
-.nav{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
 }
 
 .nav a {
-    font-size: 16px;
+  font-size: 16px;
+  font-family: inherit;
+  font-weight: 400;
+  line-height: 18.75px;
+  letter-spacing: 1%;
 }
 
 .btn {
-    background-color: #2E4F46;
-    padding: 10px 20px;
-    color: white;
-    border-radius: 9999px;
+  background-color: #2e4f46;
+  padding: 15px 30px;
+  color: white;
+  border-radius: 999px;
+  border: none;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18.75px;
+  letter-spacing: 1%;
 }
 
 .section {
-    flex: 20;
-    display: flex;
-    justify-content: space-around;
+  flex: 20;
+  display: flex;
+  justify-content: space-around;
 }
