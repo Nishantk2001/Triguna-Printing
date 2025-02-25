@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "Digital Printing",
+    "description": "High-quality digital printing services with fast turnaround for small to medium print runs.",
+    "imageUrl": "./Images/digitalPrinting.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Offset Printing",
+    "description": "Efficient offset printing ideal for large volume projects, including brochures, catalogs, and more.",
+    "imageUrl": "https://source.unsplash.com/300x200/?offset-printing"
+  },
+  {
+    "id": 3,
+    "name": "Large Format Printing",
+    "description": "Vibrant large format printing for banners, posters, and trade show displays with eye-catching quality.",
+    "imageUrl": "https://source.unsplash.com/300x200/?large-format-printing"
+  },
+  {
+    "id": 4,
+    "name": "Commercial Printing",
+    "description": "Professional commercial printing solutions tailored for corporate materials and marketing campaigns.",
+    "imageUrl": "https://source.unsplash.com/300x200/?commercial-printing"
+  },
+  {
+    "id": 5,
+    "name": "Custom Packaging",
+    "description": "Innovative packaging printing services to create customized boxes, labels, and branding materials.",
+    "imageUrl": "https://source.unsplash.com/300x200/?packaging"
+  },
+  {
+    "id": 6,
+    "name": "Brochure Printing",
+    "description": "Eye-catching brochure printing with various paper stocks and finishes to suit your marketing needs.",
+    "imageUrl": "https://source.unsplash.com/300x200/?brochure-printing"
+  },
+  {
+    "id": 7,
+    "name": "Business Cards",
+    "description": "Professional business card printing offering a range of styles, finishes, and custom designs.",
+    "imageUrl": "https://source.unsplash.com/300x200/?business-cards"
+  },
+  {
+    "id": 8,
+    "name": "Book Printing",
+    "description": "Custom book printing for authors and publishers with options for both paperback and hardcover formats.",
+    "imageUrl": "https://source.unsplash.com/300x200/?book-printing"
+  },
+  {
+    "id": 9,
+    "name": "Flyer Printing",
+    "description": "Cost-effective flyer printing to help you promote events, sales, and special offers with impact.",
+    "imageUrl": "https://source.unsplash.com/300x200/?flyer-printing"
+  },
+  {
+    "id": 10,
+    "name": "Magazine Printing",
+    "description": "High-quality magazine printing services featuring both glossy and matte finishes for a premium look.",
+    "imageUrl": "https://source.unsplash.com/300x200/?magazine-printing"
+  },
+  {
+    "id": 11,
+    "name": "Sticker Printing",
+    "description": "Vibrant and durable sticker printing for branding, labeling, and promotional purposes.",
+    "imageUrl": "https://source.unsplash.com/300x200/?sticker-printing"
+  },
+  {
+    "id": 12,
+    "name": "Poster Printing",
+    "description": "High-quality poster printing services perfect for events, advertising, or decor.",
+    "imageUrl": "https://source.unsplash.com/300x200/?poster-printing"
+  }
+]

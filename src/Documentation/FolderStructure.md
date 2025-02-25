@@ -13,7 +13,7 @@
   │   ├── /hooks         # Custom React hooks
   │   ├── /utils         # Helper functions
   │   ├── /services      # API calls and business logic
-  │   ├── /context       # Global state management (React Context)
+  │   ├── /store       # Global state management (React redux)
   │   ├── /assets        # Images, fonts, styles
   │   ├── App.tsx         # Main application component
   │   ├── index.tsx       # Entry point
