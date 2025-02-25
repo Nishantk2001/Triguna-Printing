@@ -1,0 +1,42 @@
+/* Main Contact Bar Container */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #ffffff;
+    width: 100%;
+    min-height: 75px;
+    height: auto;
+}
+
+.img {
+    flex: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.nav a {
+    font-size: 16px;
+}
+
+.btn {
+    background-color: #2E4F46;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 9999px;
+}
+
+.section {
+    flex: 20;
+    display: flex;
+    justify-content: space-around;
+}

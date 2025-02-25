@@ -1,0 +1,122 @@
+.hero {
+    display: flex;
+    align-items: center; 
+    height: 100vh; 
+    color: white;
+    padding-left: 7%;
+  }
+  
+  .sectionHero {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .firstline {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .firstline .line {
+    width: 30px;
+    height: 4px;
+    background-color: #E8B237;
+  }
+
+  .firstline p {
+    font-family: Pragati Narrow;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 40.61px;
+    letter-spacing: 15%;
+    color: #FFFFFF;
+  }
+
+  .exp{
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56.25px;
+    letter-spacing: 9%;
+  }
+
+  .text {
+    font-family: Sedan SC;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 57.6px;
+    letter-spacing: 9%;
+    color: #E8B237;
+  }
+
+  .text1 {
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56.25px;
+    letter-spacing: 9%;
+    color: #ffffff;
+  }
+
+  .text2 {
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56.25px;
+    letter-spacing: 9%;
+    color: #ffffff;
+  }
+
+  .paragraph {
+    max-width: 640px;
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14.06px;
+    letter-spacing: 9%;
+  }
+
+  .customButton {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    border: none;
+    border-radius: 50px;
+    background-color: #E2AA34; /* Golden Yellow */
+    padding: 5px 10px;
+    position: relative;
+    max-width: 150px;
+    height: 40px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    margin-top: 10px;
+  }
+  
+  .icon {
+    background-color: #2F4A3D; /* Dark Green */
+    color: white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    position: absolute;
+    left: 5px;
+  }
+  
+  .btntext {
+    flex-grow: 1;
+    text-align: center;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18.75px;
+    letter-spacing: 1%;
+    color: black;
+  }
+  
