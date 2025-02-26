@@ -1,3 +1,4 @@
+@import "../../index.css";
 .services {
   margin-block: 50px;
   display: flex;
@@ -24,7 +25,7 @@
 .firstline .line {
   width: 30px;
   height: 4px;
-  background-color: #e8b237;
+  background-color: var(--accent-color);
 }
 
 .firstline p {
@@ -50,7 +51,7 @@
   font-size: 36px;
   line-height: 33.21px;
   letter-spacing: 0%;
-  color: #f5ae0a;
+  color: var(--secondary-color);
 }
 
 .cardbox {

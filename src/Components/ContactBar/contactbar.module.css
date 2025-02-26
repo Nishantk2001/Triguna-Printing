@@ -1,3 +1,4 @@
+@import "../../index.css";
 /* Main Contact Bar Container */
 .contactbar {
   display: flex;
@@ -26,7 +27,7 @@
 
 /* Icons Styling */
 .icon {
-  color: #2e4f46;
+  color: var(--primary-color);
 }
 
 /* Social Media Section */
@@ -37,8 +38,8 @@
 
 .socialMedia {
   display: flex;
-  background-color: #e8b237;
-  border-radius: 50px 0 0 50px;
+  background-color: var(--secondary-color);
+  /* border-radius: 50px 0 0 50px; */
   justify-content: center;
   align-items: center;
   border: none;
@@ -49,11 +50,11 @@
 
 .socialIcon {
   color: #000;
-  background-color: #e8b237;
+  /* background-color: #e8b237; */
 }
 
 .socialIcon:hover {
-  background: #444;
+  /* background: #444; */
 }
 
 /* Responsive Design */
