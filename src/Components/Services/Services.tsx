@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react';
 import Card from './Card/Card';
 import styles from './services.module.css';
+import servicesData from '../../assets/services.json';
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 export interface Service {
   id: number;
   name: string;
@@ -9,14 +11,22 @@ export interface Service {
 }
 
 export default function Services() {
-  const [services, setServices] = useState([]);
+  const [showAll, setShowAll] = useState<boolean>(false);
+  const [visibleServices, setVisibleServices] = useState<Service[]>([]);
+  const initialCount = 6;
+  const services: Service[] = servicesData;
 
   useEffect(() => {
-    fetch('./services.json')
-      .then((response) => response.json())
-      .then((data) => setServices(data))
-      .catch((error) => console.error('Error fetching services:', error));
-  }, []);
+    if (showAll) {
+      setVisibleServices(services);
+    } else {
+      setVisibleServices(services.slice(0, initialCount));
+    }
+  }, [showAll, services]);
+
+  const toggleServices = () => {
+    setShowAll((prev) => !prev);
+  };
 
   return (
     <div className={styles.services}>
@@ -28,12 +38,26 @@ export default function Services() {
         <p className={styles.line2}>Explore our Services</p>
         <p className={styles.line3}> Print Your Vision, Make It Reality!</p>
       </div>
-      <div className={styles.cardbox}>
-        {services.map((service: Service) => (
-          <div key={service.id}>
-            <Card service={service} />
-          </div>
-        ))}
+      <div className={styles.lowersection}>
+        <button className={styles.customButton}>
+          <span className={styles.icon}>
+            <ArrowForwardIcon
+              sx={{
+                fontSize: '30px',
+              }}
+            />
+          </span>
+          <span className={styles.btntext} onClick={toggleServices}>
+            {showAll ? 'Show Less' : 'Show More'}
+          </span>
+        </button>
+        <div className={styles.cardbox}>
+          {visibleServices.map((service: Service) => (
+            <div key={service.id}>
+              <Card service={service} />
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
