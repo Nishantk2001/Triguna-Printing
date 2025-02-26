@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "Digital Printing",
+    "description": "High-quality digital printing services with fast turnaround for small to medium print runs.",
+    "imageUrl": "./Images/digital-printing.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Book Printing",
+    "description": "Custom book printing for authors and publishers with options for both paperback and hardcover formats.",
+    "imageUrl": "./Images/Books-printing.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Large Format Printing",
+    "description": "Vibrant large format printing for banners, posters, and trade show displays with eye-catching quality.",
+    "imageUrl": "./Images/large-format.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Business Cards",
+    "description": "Professional business card printing offering a range of styles, finishes, and custom designs.",
+    "imageUrl": "./Images/Business-cards.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Flyer Printing",
+    "description": "Cost-effective flyer printing to help you promote events, sales, and special offers with impact.",
+    "imageUrl": "./Images/flyer-printing.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Magazine Printing",
+    "description": "High-quality magazine printing services featuring both glossy and matte finishes for a premium look.",
+    "imageUrl": "./Images/magazine-printing.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Sticker Printing",
+    "description": "Vibrant and durable sticker printing for branding, labeling, and promotional purposes.",
+    "imageUrl": "./Images/sticker-printing.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Poster Printing",
+    "description": "High-quality poster printing services perfect for events, advertising, or decor.",
+    "imageUrl": "./Images/poster-printing.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Bill-Book Printing",
+    "description": "Efficient Bill-Book printing ideal for large volume projects, including brochures, catalogs, and more.",
+    "imageUrl": "./Images/bill-book.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Commercial Printing",
+    "description": "Professional commercial printing solutions tailored for corporate materials and marketing campaigns.",
+    "imageUrl": "./Images/commercial-printing.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Custom Packaging",
+    "description": "Innovative packaging printing services to create customized boxes, labels, and branding materials.",
+    "imageUrl": "./Images/custome-printing.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Brochure Printing",
+    "description": "Eye-catching brochure printing with various paper stocks and finishes to suit your marketing needs.",
+    "imageUrl": "./Images/brochure-printing.jpg"
+  }
+]

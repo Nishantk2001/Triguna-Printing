@@ -1,0 +1,64 @@
+@import '../../../index.css';
+.contactcard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+  width: 100%;
+  max-width: 500px;
+  background-color: #0885b9;
+  color: #ffffff;
+  padding: 50px;
+  border-radius: 30px;
+  clip-path: polygon(
+    0 0,
+    /* top left */ calc(100% - 150px) 0,
+    /* move along the top edge leaving 110px from the right */ 100% 150px,
+    /* go down the right edge by 110px */ 100% 100%,
+    /* bottom right */ 0 100% /* bottom left */
+  );
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.info span {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28.12px;
+  letter-spacing: 1%;
+}
+
+.info .contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+}
+
+.info .contact p {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18.75px;
+  letter-spacing: 1%;
+}
+
+.info .contact1 {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.contact1 img {
+  width: 30px;
+  height: 30px;
+  padding: 40px;
+  background-color: #ffeb00;
+  border-radius: 999px;
+}

@@ -1,0 +1,137 @@
+@import "../../index.css";
+.hero { 
+  display: flex;
+  align-items: center;
+  padding-block: 150px;
+  background-color: var(--primary-color);
+  color: white;
+  padding-left: 7%;
+}
+
+.sectionHero {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 8px;
+}
+.rightsection {
+  flex: 1;
+}
+
+.sectionRightHero {
+  width: 80%;
+  height: 600px;
+  background-color: white;
+}
+
+.firstline {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.firstline .line {
+  width: 30px;
+  height: 4px;
+  background-color: var(--accent-color);
+}
+
+.firstline p {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 40.61px;
+  letter-spacing: 15%;
+  color: #ffffff;
+}
+
+.exp {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56.25px;
+  letter-spacing: 9%;
+}
+
+.text {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 57.6px;
+  letter-spacing: 9%;
+  color: var(--accent-color);
+}
+
+.text1 {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56.25px;
+  letter-spacing: 9%;
+  color: #ffffff;
+}
+
+.text2 {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56.25px;
+  letter-spacing: 9%;
+  color: #ffffff;
+}
+
+.paragraph {
+  max-width: 540px;
+  margin-block: 10px;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20.06px;
+  letter-spacing: 15%;
+}
+
+.customButton {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+  border: none;
+  border-radius: 50px;
+  /* background-color: #e2aa34; Golden Yellow */
+  /* padding: 0px 10px; */
+  position: relative;
+  max-width: 200px;
+  height: 52px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  margin-top: 10px;
+}
+
+.icon {
+  background-color: var(--secondary-color); /* Dark Green */
+  color: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  position: absolute;
+  left: 6px;
+}
+
+.btntext {
+  background-color: var(--accent-color);
+  /* flex-grow: 1; */
+  padding: 16.5px 25px;
+  border-radius: 50px;
+  text-align: center;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 18.75px;
+  letter-spacing: 1%;
+  color: var(--text-color);
+}

@@ -1,0 +1,73 @@
+@import "../../../index.css";
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  min-width: 350px;
+  max-width: 400px;
+  background-color: #f4f4f4;
+  border-radius: 20px;
+  padding: 30px;
+}
+
+.info {
+  color: var(--heading-color);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.info span {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 29.52px;
+  letter-spacing: 3%;
+}
+
+.info p {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18.45px;
+  letter-spacing: 3%;
+  color: var(--text-color);
+}
+
+.sectiontwo {
+  position: relative;
+}
+
+.img {
+  background-color: #ffffff;
+  width: 100%;
+  aspect-ratio: 4/3;
+  border-radius: 20px;
+  overflow: hidden;
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% calc(100% - 110px),
+    calc(100% - 110px) 100%,
+    0 100%
+  );
+}
+.serviceCardImage {
+  width: 100%;
+  aspect-ratio: 4/3;
+  border-radius: 20px;
+  object-fit: cover;
+  display: block;
+}
+
+.btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 999px;
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}

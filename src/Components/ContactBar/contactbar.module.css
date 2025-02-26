@@ -1,0 +1,75 @@
+@import "../../index.css";
+/* Main Contact Bar Container */
+.contactbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  background: #f8f8f8;
+  width: 100%;
+  min-height: 60px;
+  height: auto;
+}
+
+/* Contact Info Section */
+.contactSection {
+  display: flex;
+  gap: 20px;
+  margin-left: 5%;
+}
+
+.contactInfo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Icons Styling */
+.icon {
+  color: var(--primary-color);
+}
+
+/* Social Media Section */
+.menubar {
+  width: 376px;
+  min-height: 100%;
+}
+
+.socialMedia {
+  display: flex;
+  background-color: var(--secondary-color);
+  /* border-radius: 50px 0 0 50px; */
+  justify-content: center;
+  align-items: center;
+  border: none;
+  gap: 25px;
+  padding-right: 50px;
+  height: 100%;
+}
+
+.socialIcon {
+  color: #000;
+  /* background-color: #e8b237; */
+}
+
+.socialIcon:hover {
+  /* background: #444; */
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .contactbar {
+    /* flex-direction: column; */
+    text-align: center;
+  }
+
+  .contactSection {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .socialMedia {
+    gap: 10px;
+  }
+}

@@ -1,0 +1,15 @@
+.contact {
+  display: flex;
+  align-items: center;
+  background-color: #f0f0f0;
+  padding: 80px;
+  color: black;
+}
+
+.contactForm {
+  flex: 3;
+}
+
+.card {
+  flex: 2;
+}

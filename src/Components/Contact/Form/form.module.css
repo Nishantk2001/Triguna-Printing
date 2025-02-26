@@ -1,0 +1,152 @@
+@import '../../../index.css';
+.formSection {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.firstline {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.firstline .line {
+  width: 30px;
+  height: 4px;
+  background-color: var(--secondary-color);
+}
+
+.firstline p {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  font-size: 32.87px;
+  line-height: 30.32px;
+  letter-spacing: 12%;
+}
+
+.text {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 59.05px;
+  letter-spacing: 0%;
+  margin-bottom: 50px;
+}
+
+.text span {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 44.29px;
+  letter-spacing: 0%;
+  color: var(--secondary-color);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding-right: 50px;
+}
+
+.inputs {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+}
+
+.inputs .inputbox {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.inputbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.inputbox label {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 18.45px;
+  letter-spacing: 0%;
+}
+
+.inputbox input {
+  padding: 16px 24px;
+  width: 100%;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 18.75px;
+  letter-spacing: 1%;
+  border-radius: 10px;
+  color: #948e8e;
+  border: none;
+}
+
+.inputbox textarea {
+  padding: 16px 24px;
+  width: 100%;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 18.75px;
+  letter-spacing: 1%;
+  border-radius: 10px;
+  color: #948e8e;
+  height: 200px;
+  border: none;
+}
+
+.customButton {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+  border: none;
+  border-radius: 50px;
+  background-color: #000000;
+  /* padding: 0px 10px; */
+  position: relative;
+  max-width: 211px;
+  height: 52px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  margin-top: 10px;
+}
+
+.icon {
+  background-color: white; /* Dark Green */
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  position: absolute;
+  left: 6px;
+}
+
+.btntext {
+  background-color: var(--accent-color);
+  /* flex-grow: 1; */
+  padding: 16.5px 26px;
+  border-radius: 50px;
+  text-align: center;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 18.75px;
+  letter-spacing: 1%;
+  color: black;
+}
