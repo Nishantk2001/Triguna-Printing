@@ -27,16 +27,16 @@ export default function ContactBar() {
       <div className={styles.menubar}>
         <div className={styles.socialMedia}>
           <a href="#" className={styles.socialIcon}>
-            <FaFacebookSquare size={25} />
+           <img src='facebook-icon.svg' alt="facebook"/>
           </a>
           <a href="#" className={styles.socialIcon}>
-            <FaTwitterSquare size={25} />
+          <img src='Twitter-icon.svg' alt="Twitter"/>
           </a>
           <a href="#" className={styles.socialIcon}>
-            <FaLinkedin size={25} />
+          <img src='Linkedin-icon.svg' alt="Linkedin"/>
           </a>
           <a href="#" className={styles.socialIcon}>
-            <FaYoutubeSquare size={25} />
+          <img src='Youtube-icon.svg' alt="Youtube"/>
           </a>
         </div>
       </div>

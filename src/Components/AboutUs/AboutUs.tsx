@@ -4,7 +4,7 @@ export default function AboutUs() {
   return (
     <div className={styles.about}>
       <div className={styles.img}>
-        {/* <img src="./Banner-1.jpg" alt="Placeholder Image" /> */}
+        <img src="./Banner-1.jpg" alt="Placeholder Image" />
       </div>
       <div className={styles.intro}>
         <h2>About Us - Triguna Printing Solutions</h2>

@@ -1,7 +1,8 @@
-import AboutUs from '../../Components/AboutUs/AboutUs';
-import Contact from '../../Components/Contact/Contact';
-import Hero from '../../Components/Hero/Hero';
-import Services from '../../Components/Services/Services';
+import AboutUs from "../../Components/AboutUs/AboutUs";
+import Footer from "../../Components/Footer/Footer";
+import Contact from "../../Components/Contact/Contact";
+import Hero from "../../Components/Hero/Hero";
+import Services from "../../Components/Services/Services";
 
 export default function HomePage() {
   return (
@@ -10,6 +11,7 @@ export default function HomePage() {
       <Services />
       <AboutUs />
       <Contact />
+      <Footer />
     </div>
   );
 }
