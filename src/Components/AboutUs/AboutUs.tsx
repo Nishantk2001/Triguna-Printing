@@ -1,4 +1,4 @@
-import styles from './about.module.css';
+import styles from "./about.module.css";
 
 export default function AboutUs() {
   return (
@@ -7,12 +7,12 @@ export default function AboutUs() {
         <img src="./Banner-1.jpg" alt="Placeholder Image" />
       </div>
       <div className={styles.intro}>
-        <h2>About Us - Triguna Printing Solutions</h2>
+        <h2>About Us - Apurva Arts Printing Solutions</h2>
         <div className={styles.text}>
           <span>T</span>
           <div className={styles.para}>
             <p>
-              Triguna, we believe that printing is more than just ink on
+              Apurva Arts, we believe that printing is more than just ink on
               paper—it's about bringing ideas to life with precision,
               creativity, and quality. As a leading printing solutions provider,
               we cater to a wide range of printing needs, including paper,
@@ -66,7 +66,7 @@ export default function AboutUs() {
         </div>
       </div>
       <div className={styles.choose}>
-        <h2>Why Choose Triguna?</h2>
+        <h2>Why Choose Apurva Arts?</h2>
         <ul className={styles.chooselist}>
           <li className={styles.listElem}>
             <strong>Unmatched Print Quality</strong>– Crisp, clear, and vibrant

@@ -1,5 +1,5 @@
-import styles from './hero.module.css';
-import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import styles from "./hero.module.css";
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 
 export default function Hero() {
   return (
@@ -10,11 +10,11 @@ export default function Hero() {
           <p>SINCE 2005</p>
         </div>
         <p className={styles.exp}>Experience</p>
-        <p className={styles.text}>Welcome to Triguna</p>
+        <p className={styles.text}>Welcome to Apurva Arts</p>
         <p className={styles.text1}>Your One-Stop</p>
         <p className={styles.text2}>Printing Solution</p>
         <p className={styles.paragraph}>
-          At Triguna, we bring your ideas to life with high-quality printing
+          At Apurva Arts, we bring your ideas to life with high-quality printing
           services tailored to meet your needs. Whether it's paper, clothing,
           flex, posters, cups, visiting cards, books, or any other type of
           printing, we ensure precision, durability, and vibrant designs that
@@ -25,7 +25,7 @@ export default function Hero() {
           <span className={styles.icon}>
             <ArrowForwardIcon
               sx={{
-                fontSize: '30px',
+                fontSize: "30px",
               }}
             />
           </span>
@@ -33,7 +33,9 @@ export default function Hero() {
         </button>
       </div>
       <div className={styles.rightsection}>
-        <div className={styles.sectionRightHero}></div>
+        <div className={styles.sectionRightHero}>
+          <img src="./printing-press.png" alt="Placeholder Image" />
+        </div>
       </div>
     </div>
   );

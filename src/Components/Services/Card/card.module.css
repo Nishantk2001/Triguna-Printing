@@ -71,3 +71,11 @@
   bottom: 0;
   right: 0;
 }
+.UpIcon {
+  transition: transform 0.3s ease-in-out;
+}
+
+.UpIcon:hover {
+  cursor: pointer;
+  transform: scale(1.1) translate(3px, -3px);
+}
