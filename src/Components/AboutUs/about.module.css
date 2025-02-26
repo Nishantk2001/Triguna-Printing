@@ -1,6 +1,6 @@
-@import "../../index.css";
+@import '../../index.css';
 .about {
-  margin-block: 50px;
+  /* margin-block: 50px; */
   display: flex;
   flex-direction: column;
   background-color: #f3f2f2;
