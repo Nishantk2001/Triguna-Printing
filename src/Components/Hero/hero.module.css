@@ -1,8 +1,9 @@
-.hero {
+@import "../../index.css";
+.hero { 
   display: flex;
   align-items: center;
   padding-block: 150px;
-  background-color: #2e4f46;
+  background-color: var(--primary-color);
   color: white;
   padding-left: 7%;
 }
@@ -33,7 +34,7 @@
 .firstline .line {
   width: 30px;
   height: 4px;
-  background-color: #e8b237;
+  background-color: var(--accent-color);
 }
 
 .firstline p {
@@ -59,7 +60,7 @@
   font-size: 48px;
   line-height: 57.6px;
   letter-spacing: 9%;
-  color: #e8b237;
+  color: var(--accent-color);
 }
 
 .text1 {
@@ -108,7 +109,7 @@
 }
 
 .icon {
-  background-color: #2f4a3d; /* Dark Green */
+  background-color: var(--secondary-color); /* Dark Green */
   color: white;
   border-radius: 50%;
   width: 40px;
@@ -122,14 +123,14 @@
 }
 
 .btntext {
-  background-color: #e2aa34; /* Golden Yellow */
+  background-color: var(--accent-color);
   /* flex-grow: 1; */
   padding: 16.5px 25px;
   border-radius: 50px;
   text-align: center;
   font-family: inherit;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 18.75px;
   letter-spacing: 1%;
   color: black;

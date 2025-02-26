@@ -1,16 +1,17 @@
+@import "../../../index.css";
 .card {
   display: flex;
   flex-direction: column;
   gap: 50px;
   min-width: 350px;
   max-width: 400px;
-  background-color: #e6e6e6;
+  background-color: #f4f4f4;
   border-radius: 20px;
   padding: 30px;
 }
 
 .info {
-  color: #000000;
+  color: var(--heading-color);
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -30,7 +31,7 @@
   font-size: 16px;
   line-height: 18.45px;
   letter-spacing: 3%;
-  color: #706c6c;
+  color: var(--text-color);
 }
 
 .sectiontwo {
@@ -63,7 +64,7 @@
   width: 50px;
   height: 50px;
   border-radius: 999px;
-  background-color: #2e4f46;
+  background-color: var(--secondary-color);
   color: white;
   border: none;
   position: absolute;

@@ -1,3 +1,4 @@
+@import "../../index.css";
 /* Main Contact Bar Container */
 .navbar {
   display: flex;
@@ -15,7 +16,7 @@
   top: 0;
   left: 0;
   z-index: 999;
-  background-color: #d6d5d5;
+  background-color: #fffcfc;
 }
 
 .img {
@@ -29,19 +30,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 40px;
+  gap: 50px;
 }
 
-.nav a {
+.nav p {
   font-size: 16px;
   font-family: inherit;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 18.75px;
   letter-spacing: 1%;
 }
 
 .btn {
-  background-color: #2e4f46;
+  background-color: var(--primary-color);
   padding: 15px 30px;
   color: white;
   border-radius: 999px;

@@ -19,7 +19,7 @@ export default function Navbar() {
   return (
     <div className={`${styles.navbar} ${isSticky ? styles.sticky : ''}`}>
       <div className={styles.img}>
-        <img src="./Logo.png" alt="Placeholder Image" />
+        <img src="./Apurvaarts.png" alt="Placeholder Image" style={{ width: '150px', height: '75px'}} />
       </div>
       <div className={styles.section}>
         <nav className={styles.nav}>
