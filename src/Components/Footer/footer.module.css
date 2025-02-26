@@ -1,0 +1,106 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding: 80px;
+  background-color: var(--primary-color);
+}
+.footerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.leftFooterContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+}
+.footerText {
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+  width: 300px;
+}
+.socialMedia {
+  display: flex;
+  gap: 10px;
+}
+.socialIcon {
+  background-color: #cecece83;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}
+.rightFooterContent {
+  flex: 2;
+  display: flex;
+  /* gap: 40px; */
+  justify-content: space-between;
+}
+.footerNav {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  color: white;
+}
+.footerContact {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  color: white;
+}
+.footerEmailInput {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  color: white;
+}
+.emailInput {
+  display: flex;
+  align-items: center;
+}
+.emailInput input {
+  width: 300px;
+  height: 40px;
+  border-radius: 10px 0px 0px 10px;
+  border: none;
+  padding-left: 10px;
+}
+.emailInput button {
+  width: 50px;
+  height: 40px;
+  border-radius: 0px 10px 10px 0px;
+  border: none;
+  background-color: var(--accent-color);
+}
+.copyRightsContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 20px;
+}
+.bottomLine {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.514);
+}
+.copyRightsText {
+  display: flex;
+  width: 100%;
+  margin-top: 40px;
+  justify-content: space-between;
+}
+.copyRightsText p span {
+  color: var(--accent-color);
+}

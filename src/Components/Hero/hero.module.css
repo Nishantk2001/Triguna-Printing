@@ -133,5 +133,5 @@
   font-size: 18px;
   line-height: 18.75px;
   letter-spacing: 1%;
-  color: black;
+  color: var(--text-color);
 }

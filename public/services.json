@@ -49,26 +49,26 @@
   },
   {
     "id": 9,
-    "name": "Offset Printing",
-    "description": "Efficient offset printing ideal for large volume projects, including brochures, catalogs, and more.",
-    "imageUrl": "https://source.unsplash.com/300x200/?offset-printing"
+    "name": "Bill-Book Printing",
+    "description": "Efficient Bill-Book printing ideal for large volume projects, including brochures, catalogs, and more.",
+    "imageUrl": "./Images/bill-book.jpg"
   },
   {
     "id": 10,
     "name": "Commercial Printing",
     "description": "Professional commercial printing solutions tailored for corporate materials and marketing campaigns.",
-    "imageUrl": "https://source.unsplash.com/300x200/?commercial-printing"
+    "imageUrl": "./Images/commercial-printing.jpg"
   },
   {
     "id": 11,
     "name": "Custom Packaging",
     "description": "Innovative packaging printing services to create customized boxes, labels, and branding materials.",
-    "imageUrl": "https://source.unsplash.com/300x200/?packaging"
+    "imageUrl": "./Images/custome-printing.jpg"
   },
   {
     "id": 12,
     "name": "Brochure Printing",
     "description": "Eye-catching brochure printing with various paper stocks and finishes to suit your marketing needs.",
-    "imageUrl": "https://source.unsplash.com/300x200/?brochure-printing"
+    "imageUrl": "./Images/brochure-printing.jpg"
   }
 ]
