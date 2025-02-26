@@ -1,5 +1,5 @@
-import GoogleMaps from '../../../Utils/GoogleMap/GoogleMap';
-import styles from './contactcard.module.css';
+import GoogleMaps from "../../../Utils/GoogleMap/GoogleMap";
+import styles from "./contactcard.module.css";
 export default function ContactCard() {
   return (
     <div className={styles.contactcard}>
@@ -26,11 +26,19 @@ export default function ContactCard() {
       </div>
       <div className={styles.info}>
         <span>Stay Connected</span>
-        <div className={styles.contact1}>
-          <img src="" alt="facebook" />
-          <img src="" alt="twitter" />
-          <img src="" alt="linkdin" />
-          <img src="" alt="youtube" />
+        <div className={styles.socialMedia}>
+          <a href="#" className={styles.socialIcon}>
+            <img src="facebook-icon.svg" alt="facebook" />
+          </a>
+          <a href="#" className={styles.socialIcon}>
+            <img src="Twitter-icon.svg" alt="Twitter" />
+          </a>
+          <a href="#" className={styles.socialIcon}>
+            <img src="Linkedin-icon.svg" alt="Linkedin" />
+          </a>
+          <a href="#" className={styles.socialIcon}>
+            <img src="Youtube-icon.svg" alt="Youtube" />
+          </a>
         </div>
       </div>
     </div>
