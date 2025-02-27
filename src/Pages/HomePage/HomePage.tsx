@@ -1,4 +1,4 @@
-import AboutUs from '../../Components/AboutUs/AboutUs';
+// import AboutUs from '../../Components/AboutUs/AboutUs';
 import Footer from '../../Components/Footer/Footer';
 import Contact from '../../Components/Contact/Contact';
 import Hero from '../../Components/Hero/Hero';
