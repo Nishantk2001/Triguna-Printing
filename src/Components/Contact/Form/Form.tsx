@@ -1,6 +1,7 @@
 import { ChangeEvent, FormEvent, useState } from 'react';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import styles from './form.module.css';
+import MessageBox from '../../MessageBox/MessageBox';
 interface FormData {
   name: string;
   email: string;
@@ -22,6 +23,7 @@ export default function Form(): JSX.Element {
     message: '',
   });
   const [errors, setErrors] = useState<FormErrors>({});
+  const [isSubmit, setIsSubmit] = useState(false);
 
   const handleChange = (
     e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -58,8 +60,8 @@ export default function Form(): JSX.Element {
       return;
     }
     setErrors({});
+    setIsSubmit(true);
     console.log('Form Data Submitted:', formData);
-    alert('Form submitted successfully!');
     setFormData({ name: '', email: '', subject: '', message: '' });
   };
 
@@ -133,6 +135,7 @@ export default function Form(): JSX.Element {
           <span className={styles.btntext}>Get Started</span>
         </button>
       </form>
+      {isSubmit && <MessageBox submit={setIsSubmit} />}
     </div>
   );
 }
