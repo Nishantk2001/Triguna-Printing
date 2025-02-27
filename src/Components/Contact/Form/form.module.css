@@ -1,4 +1,4 @@
-@import "../../../index.css";
+@import '../../../index.css';
 .formSection {
   display: flex;
   flex-direction: column;
@@ -19,7 +19,7 @@
 }
 
 .firstline p {
-  font-family: "Playfair Display", serif;
+  font-family: 'Playfair Display', serif;
   font-weight: 400;
   font-size: 32.87px;
   line-height: 30.32px;
@@ -90,9 +90,13 @@
   line-height: 18.75px;
   letter-spacing: 1%;
   border-radius: 10px;
-  color: #948e8e;
   border: none;
   background-color: var(--secondary-bg-color);
+  outline: none;
+}
+
+.inputbox input::placeholder {
+  color: #948e8e;
 }
 
 .inputbox textarea {
@@ -104,10 +108,14 @@
   line-height: 18.75px;
   letter-spacing: 1%;
   border-radius: 10px;
-  color: #948e8e;
   height: 200px;
   border: none;
   background-color: var(--secondary-bg-color);
+  outline: none;
+}
+
+.inputbox textarea::placeholder {
+  color: #948e8e;
 }
 
 .customButton {

@@ -74,6 +74,7 @@
   border: none;
   padding-left: 20px;
   background-color: #f6f6f683;
+  outline: none;
 }
 .emailInput input::placeholder {
   color: white;
