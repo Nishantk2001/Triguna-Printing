@@ -23,6 +23,7 @@
   font-size: 14px;
   font-weight: 400;
   width: 300px;
+  line-height: 18px;
 }
 .socialMedia {
   display: flex;
@@ -71,7 +72,11 @@
   height: 40px;
   border-radius: 10px 0px 0px 10px;
   border: none;
-  padding-left: 10px;
+  padding-left: 20px;
+  background-color: #f6f6f683;
+}
+.emailInput input::placeholder {
+  color: white;
 }
 .emailInput button {
   width: 50px;

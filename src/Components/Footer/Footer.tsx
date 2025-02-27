@@ -15,9 +15,10 @@ export default function Footer() {
           </div>
           <div className={styles.footerText}>
             <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the
+              At Apurva Arts, we bring your ideas to life with high-quality
+              printing services tailored to meet your needs. Whether it's paper,
+              clothing, flex, posters, cups, visiting cards, books, or any other
+              type of printing
             </p>
           </div>
           <div className={styles.socialMedia}>

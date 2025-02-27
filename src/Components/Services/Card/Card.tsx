@@ -1,7 +1,7 @@
-import React from 'react';
-import styles from './card.module.css';
-import { MdOutlineArrowOutward } from 'react-icons/md';
-import { Service } from '../Services';
+import React from "react";
+import styles from "./card.module.css";
+import { MdOutlineArrowOutward } from "react-icons/md";
+import { Service } from "../Services";
 
 interface CardProps {
   service: Service;
@@ -23,7 +23,7 @@ const Card: React.FC<CardProps> = ({ service }) => {
           />
         </div>
         <button className={styles.btn}>
-          <MdOutlineArrowOutward size={30} />
+          <MdOutlineArrowOutward size={30} className={styles.UpIcon} />
         </button>
       </div>
     </div>
