@@ -6,8 +6,8 @@ export default function ContactCard() {
       <div className={styles.info}>
         <span>Contact</span>
         <div className={styles.contact}>
-          <p>Phone : +91 98708 54362 </p>
-          <p>Email : +91 example@gmail.com </p>
+          <p>Phone : +91 94170 50564 </p>
+          <p>Email : apurvaarts.chd@gmail.com </p>
         </div>
       </div>
       <div className={styles.info}>

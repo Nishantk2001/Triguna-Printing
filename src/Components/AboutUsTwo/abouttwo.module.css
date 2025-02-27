@@ -1,4 +1,4 @@
-@import '../../index.css';
+@import "../../index.css";
 
 .aboutSection {
   display: flex;
@@ -6,7 +6,7 @@
   align-items: center;
   padding: 80px;
   gap: 50px;
-  background-color: #f0f0f0;
+  background-color: var(--secondary-bg-color);
 }
 
 .abouttwo {
@@ -89,12 +89,12 @@
 .firstline .line {
   height: 4px;
   width: 30px;
-  background-color: #ffeb00;
+  background-color: var(--accent-color);
   border: none;
 }
 
-.firstline p {
-  font-family: 'Playfair display', serif;
+.about .firstline p {
+  font-family: "Playfair Display", serif;
   font-weight: 400;
   font-size: 32.87px;
   line-height: 30.32px;
@@ -110,9 +110,9 @@
 }
 
 .heading h2 span {
-  font-family: 'Playfair display', serif;
+  font-family: "Playfair display", serif;
   font-weight: 400;
-  color: var(--heading-color);
+  color: var(--secondary-color);
 }
 
 .about p {
@@ -161,7 +161,7 @@
 }
 
 .founder h1 {
-  font-family: 'Playfair display', serif;
+  font-family: "Playfair display", serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 21.6px;
@@ -185,7 +185,7 @@
 .data span {
   width: 5px;
   height: 5px;
-  background-color: #e8d820;
+  background-color: var(--accent-color);
   border-radius: 50%;
 }
 

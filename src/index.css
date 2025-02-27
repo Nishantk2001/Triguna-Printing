@@ -4,11 +4,12 @@
 /* Root Variables */
 :root {
   --primary-color: #0885b9;
-  --secondary-color: #e53888;
-  --accent-color: #f7e62e;
+  --secondary-color: #ea4b95;
+  --accent-color: #e8b237;
   --heading-color: #1c1818;
   --text-color: #393434;
-  --background-color: #ffffff;
+  --primary-bg-color: #ffffff;
+  --secondary-bg-color: #f4f4f4;
   --border-radius: 8px;
 }
 
@@ -28,7 +29,7 @@ html {
 
 /* Global Layout */
 body {
-  background: var(--background-color);
+  background: var(--primary-bg-color);
   color: var(--text-color);
   line-height: 1.6;
 }

@@ -47,8 +47,8 @@ export default function Footer() {
           </div>
           <div className={styles.footerContact}>
             <h3>Contact</h3>
-            <p>+1 234 567 890</p>
-            <p>support@example.com</p>
+            <p>+91 94170 50564</p>
+            <p>apurvaarts.chd@gmail.com</p>
             <p>25/15 sector-42 Atawa Chandigarh</p>
           </div>
           <div className={styles.footerEmailInput}>
