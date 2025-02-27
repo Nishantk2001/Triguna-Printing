@@ -1,0 +1,237 @@
+@import '../../index.css';
+
+.aboutSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px;
+  gap: 50px;
+  background-color: #f0f0f0;
+}
+
+.abouttwo {
+  display: flex;
+  align-items: center;
+}
+
+/* Outer container – acts as the border */
+.card {
+  position: relative;
+  flex: 2;
+  width: 100%;
+  aspect-ratio: 17/20;
+  background: var(--primary-color); /* Border color */
+  margin-inline: 40px;
+  /* Use your custom clip-path shape */
+  clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 30%);
+  border-radius: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Inner container – inset by border thickness */
+.cardInner {
+  position: absolute;
+  top: 23px; /* Equal to your border thickness */
+  left: 23px;
+  right: 23px;
+  bottom: 23px;
+  background: white;
+  /* Apply the same clip-path shape to mimic the cut corner */
+  clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 30%);
+  border-radius: 30px;
+  padding: 20px;
+
+  /* Center content */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardInner h1 {
+  font-family: inherit;
+  font-weight: 800;
+  font-size: 169.81px;
+  line-height: 229.25px;
+  letter-spacing: 1%;
+  color: #e8b237;
+}
+
+.cardInner p {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 43.2px;
+  letter-spacing: 1%;
+  color: var(--heading-color);
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px 40px;
+  gap: 50px;
+  flex: 3;
+}
+.heading {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.heading .firstline {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.firstline .line {
+  height: 4px;
+  width: 30px;
+  background-color: #ffeb00;
+  border: none;
+}
+
+.firstline p {
+  font-family: 'Playfair display', serif;
+  font-weight: 400;
+  font-size: 32.87px;
+  line-height: 30.32px;
+  letter-spacing: 12%;
+}
+
+.heading h2 {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 54.72px;
+  letter-spacing: 0%;
+}
+
+.heading h2 span {
+  font-family: 'Playfair display', serif;
+  font-weight: 400;
+  color: var(--heading-color);
+}
+
+.about p {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  letter-spacing: 1%;
+  color: #5e5a5a;
+}
+
+.batch {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.batch .part {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.part h3 {
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 48.6px;
+  letter-spacing: 1%;
+  color: var(--heading-color);
+}
+
+.part p {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21.6px;
+  letter-spacing: 1%;
+  color: var(--text-color);
+}
+
+.founder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.founder h1 {
+  font-family: 'Playfair display', serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21.6px;
+  letter-spacing: 1%;
+}
+
+.data {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.data p {
+  font-family: inherit;
+  color: var(--heading-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21.6px;
+  letter-spacing: 1%;
+}
+
+.data span {
+  width: 5px;
+  height: 5px;
+  background-color: #e8d820;
+  border-radius: 50%;
+}
+
+.lowersection {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.section .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.section .info h2 {
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32.4px;
+  letter-spacing: 1%;
+  color: var(--heading-color);
+}
+
+.section .info p {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21.6px;
+  letter-spacing: 1%;
+  color: var(--heading-color);
+}
+
+.section .icon {
+  background-color: #e8b237;
+  display: inline-block;
+  line-height: 0;
+  vertical-align: middle;
+  padding: 15px;
+  border-radius: 10px;
+}

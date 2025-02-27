@@ -1,16 +1,30 @@
-import AboutUs from "../../Components/AboutUs/AboutUs";
-import Footer from "../../Components/Footer/Footer";
-import Contact from "../../Components/Contact/Contact";
-import Hero from "../../Components/Hero/Hero";
-import Services from "../../Components/Services/Services";
+import AboutUs from '../../Components/AboutUs/AboutUs';
+import Footer from '../../Components/Footer/Footer';
+import Contact from '../../Components/Contact/Contact';
+import Hero from '../../Components/Hero/Hero';
+import Services from '../../Components/Services/Services';
+import { Element } from 'react-scroll';
+import AboutUsTwo from '../../Components/AboutUsTwo/AboutUsTwo';
 
 export default function HomePage() {
   return (
     <div>
-      <Hero />
-      <Services />
-      <AboutUs />
-      <Contact />
+      <Element name="home">
+        <Hero />
+      </Element>
+      <Element name="services">
+        <Services />
+      </Element>
+      {/* <Element name="about">
+        <AboutUs />
+      </Element> */}
+      <Element name="about">
+        <AboutUsTwo />
+      </Element>
+      <Element name="contact">
+        <Contact />
+      </Element>
+
       <Footer />
     </div>
   );
