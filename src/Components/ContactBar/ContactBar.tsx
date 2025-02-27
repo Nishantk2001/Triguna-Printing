@@ -9,11 +9,11 @@ export default function ContactBar() {
       <div className={styles.contactSection}>
         <p className={styles.contactInfo}>
           <FaPhoneAlt className={styles.icon} size={25} />
-          <span>+1 234 567 890</span>
+          <span>+91 94170 50564</span>
         </p>
         <p className={styles.contactInfo}>
           <MdEmail className={styles.icon} size={25} />
-          <span>support@example.com</span>
+          <span>apurvaarts.chd@gmail.com</span>
         </p>
       </div>
 

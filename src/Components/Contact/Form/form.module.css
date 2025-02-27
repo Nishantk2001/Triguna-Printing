@@ -1,4 +1,4 @@
-@import '../../../index.css';
+@import "../../../index.css";
 .formSection {
   display: flex;
   flex-direction: column;
@@ -18,7 +18,7 @@
 }
 
 .firstline p {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-weight: 400;
   font-size: 32.87px;
   line-height: 30.32px;
@@ -91,6 +91,7 @@
   border-radius: 10px;
   color: #948e8e;
   border: none;
+  background-color: var(--secondary-bg-color);
 }
 
 .inputbox textarea {
@@ -105,6 +106,7 @@
   color: #948e8e;
   height: 200px;
   border: none;
+  background-color: var(--secondary-bg-color);
 }
 
 .customButton {
