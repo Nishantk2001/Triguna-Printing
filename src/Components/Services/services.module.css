@@ -1,4 +1,4 @@
-@import "../../index.css";
+@import '../../index.css';
 .services {
   margin-block: 50px;
   display: flex;
@@ -29,7 +29,7 @@
 }
 
 .firstline p {
-  font-family: "Playfair Display", serif;
+  font-family: 'Playfair Display', serif;
   font-weight: 400;
   font-size: 32.87px;
   line-height: 30.32px;
@@ -45,7 +45,7 @@
 }
 
 .line3 {
-  font-family: "Playfair Display", serif;
+  font-family: 'Playfair Display', serif;
   font-weight: 400;
   font-style: italic;
   font-size: 36px;

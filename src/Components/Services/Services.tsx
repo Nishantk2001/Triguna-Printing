@@ -1,8 +1,8 @@
-import { useEffect, useState } from "react";
-import Card from "./Card/Card";
-import styles from "./services.module.css";
-import servicesData from "../../assets/services.json";
-import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import { useEffect, useState } from 'react';
+import Card from './Card/Card';
+import styles from './services.module.css';
+import servicesData from '../../assets/services.json';
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 export interface Service {
   id: number;
   name: string;
@@ -50,7 +50,7 @@ export default function Services() {
         </button>
         <div className={styles.cardbox}>
           {visibleServices.map((service: Service) => (
-            <div key={service.id}>
+            <div key={service.id} className={styles.cards}>
               <Card service={service} />
             </div>
           ))}
