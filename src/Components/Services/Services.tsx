@@ -39,16 +39,13 @@ export default function Services() {
         <p className={styles.line3}> Print Your Vision, Make It Reality!</p>
       </div>
       <div className={styles.lowersection}>
-        <button className={styles.customButton}>
-          <span className={styles.icon}>
-            <ArrowForwardIcon
-              sx={{
-                fontSize: '30px',
-              }}
-            />
-          </span>
-          <span className={styles.btntext} onClick={toggleServices}>
-            {showAll ? 'Show Less' : 'Show More'}
+        <button
+          className={showAll ? styles.customButton : styles.customButtonTwo}
+          onClick={toggleServices}
+        >
+          <p>View</p>
+          <span className={showAll ? styles.btntext : styles.btntextTwo}>
+            View All Services
           </span>
         </button>
         <div className={styles.cardbox}>

@@ -34,7 +34,7 @@ export default function Hero() {
       </div>
       <div className={styles.rightsection}>
         <div className={styles.sectionRightHero}>
-          <img src="./printing-press.png" alt="Placeholder Image" />
+          <img src="./heroImg.png" alt="Placeholder Image" />
         </div>
       </div>
     </div>

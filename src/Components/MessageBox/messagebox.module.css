@@ -1,4 +1,4 @@
-@import '../../index.css';
+@import "../../index.css";
 
 .model {
   position: absolute;
@@ -10,13 +10,22 @@
   border-radius: 10px;
   padding: 60px 40px;
   max-width: 480px;
+  min-width: 350px;
+  max-height: 400px;
   aspect-ratio: 1;
-  gap: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  z-index: 50;
+}
+.text {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  z-index: 1000;
+  gap: 40px;
 }
 
 .model h1 {
@@ -32,7 +41,7 @@
   color: var(--text-color);
   font-family: inherit;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 28.13px;
   letter-spacing: 0%;
   text-align: center;
@@ -41,7 +50,7 @@
 .model button {
   width: 100%;
   padding: 10px;
-  background-color: #e53888;
+  background-color: var(--secondary-color);
   font-family: inherit;
   font-weight: 600;
   font-size: 24px;
@@ -50,13 +59,20 @@
   text-align: center;
   color: #ffffff;
   border: none;
+  cursor: pointer;
 }
-
+.model button:hover {
+  background-color: #df2a7e;
+}
 .box {
   position: absolute;
-  top: -10%;
+  top: -8%;
   left: 40%;
   padding: 20px;
-  background-color: #e53888;
+  background-color: var(--secondary-color);
   border-radius: 50%;
+  display: inline-block;
+  line-height: 0;
+  vertical-align: middle;
+  transform: translate(0%, 0%);
 }
