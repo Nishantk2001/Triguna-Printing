@@ -1,4 +1,4 @@
-@import '../../../index.css';
+@import "../../../index.css";
 .card {
   display: flex;
   flex-direction: column;
@@ -17,7 +17,6 @@
   transform: translateZ(10px);
   background-color: var(--primary-color);
 }
-
 .info {
   color: var(--heading-color);
   display: flex;
@@ -89,10 +88,12 @@
   bottom: 0;
   right: 0;
 }
+.card:hover .btn {
+  background-color: var(--accent-color);
+}
 .UpIcon {
   transition: transform 0.3s ease-in-out;
 }
-
 .UpIcon:hover {
   cursor: pointer;
   transform: scale(1.1) translate(3px, -3px);
