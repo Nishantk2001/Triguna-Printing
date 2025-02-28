@@ -1,10 +1,9 @@
 @import "../../../index.css";
+
 .card {
   display: flex;
   flex-direction: column;
   gap: 50px;
-  min-width: 350px;
-  max-width: 400px;
   background-color: var(--secondary-bg-color);
   border-radius: 20px;
   padding: 30px;
@@ -12,6 +11,12 @@
   transform: translateZ(0);
   cursor: pointer;
   transition: background-color 0.7s ease;
+}
+@media (min-width: 480px) {
+  .card {
+    min-width: 350px;
+    max-width: 400px;
+  }
 }
 .card:hover {
   transform: translateZ(10px);
@@ -97,4 +102,19 @@
 .UpIcon:hover {
   cursor: pointer;
   transform: scale(1.1) translate(3px, -3px);
+}
+
+@media (max-width: 480px) {
+  .card {
+    gap: 30px;
+    width: 85%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    padding: 20px;
+    margin-right: 3%;
+  }
+}
+
+@media (max-width: 768px) {
 }

@@ -2,7 +2,6 @@
 .services {
   margin-block: 50px;
   display: flex;
-  /* justify-content: center; */
   align-items: center;
   flex-direction: column;
   gap: 40px;
@@ -79,7 +78,6 @@
   border: none;
   border-radius: 50px;
   background-color: var(--heading-color);
-  /* padding: 0px 10px; */
   position: relative;
   width: 210px;
   height: 48px;
@@ -97,7 +95,6 @@
   border: none;
   border-radius: 50px;
   background-color: var(--heading-color);
-  /* background-color: var(--accent-color); */
   position: relative;
   width: 210px;
   height: 48px;
@@ -147,28 +144,87 @@
   color: #ffffff;
 }
 
-.animateOn {
-  animation: toggleOn 0.7s ease-in-out forwards;
+@media (max-width: 480px) {
+  .firstline p {
+    font-size: 24.87px;
+    line-height: 20.32px;
+    letter-spacing: 8%;
+  }
+  .line2 {
+    font-size: 32px;
+    line-height: 39.05px;
+    letter-spacing: 0%;
+  }
+
+  .line3 {
+    place-items: center;
+    font-size: 20px;
+    line-height: 13.21px;
+    letter-spacing: 0%;
+  }
+
+  .customButton {
+    margin-right: 30px;
+    align-self: center;
+    gap: 10px;
+    width: 170px;
+    height: 40px;
+  }
+
+  .customButtonTwo {
+    align-self: center;
+    margin-right: 30px;
+    gap: 10px;
+    width: 170px;
+    height: 40px;
+  }
+  .btntext {
+    padding: 7px 8px;
+  }
+
+  .customButtonTwo p {
+    padding: 7px 8px;
+  }
+  .services {
+    gap: 20px;
+  }
+  .firstsection {
+    gap: 10px;
+  }
+  .cardbox {
+    width: 100%;
+  }
+  .cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
-.animateOff {
-  animation: toggleOff 0.7s ease-in-out forwards;
-}
+@media (max-width: 768px) and (min-width: 480px) {
+  .line2 {
+    font-size: 48px;
+    line-height: 49.05px;
+    letter-spacing: 0%;
+  }
 
-@keyframes toggleOn {
-  0% {
-    background-color: var(--accent-color);
+  .line3 {
+    place-items: center;
+    font-size: 24px;
+    line-height: 23.21px;
+    letter-spacing: 0%;
   }
-  100% {
-    background-color: var(--heading-color);
-  }
-}
 
-@keyframes toggleOff {
-  0% {
-    background-color: var(--accent-color);
+  .customButton {
+    margin-right: 40px;
+    align-self: center;
+    gap: 20px;
   }
-  100% {
-    background-color: var(--heading-color);
+
+  .customButtonTwo {
+    align-self: center;
+    margin-right: 40px;
+    gap: 20px;
   }
 }

@@ -1,4 +1,4 @@
-@import "../../index.css";
+@import '../../index.css';
 /* Main Contact Bar Container */
 .navbar {
   display: flex;
@@ -31,6 +31,7 @@
   justify-content: center;
   align-items: center;
   gap: 50px;
+  transition: gap 0.3s ease-in-out;
 }
 
 .nav .Link {
@@ -65,4 +66,49 @@
   flex: 20;
   display: flex;
   justify-content: space-around;
+}
+.img img {
+  width: 150px;
+  height: 75px;
+  transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
+}
+
+@media (max-width: 1024px) {
+  .img {
+    margin-left: 5%;
+    justify-content: flex-start;
+  }
+
+  .img img {
+    height: 50px;
+    width: 100px;
+  }
+  .nav {
+    gap: 30px;
+  }
+
+  .btn {
+    font-size: 12px;
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .img {
+    margin-left: 10%;
+  }
+  .section {
+    display: none;
+  }
+  .burger {
+    display: block;
+    margin-right: 5%;
+    font-size: 20px;
+    font-weight: 600;
+  }
+}
+@media (min-width: 769px) {
+  .burger {
+    display: none;
+  }
 }

@@ -1,4 +1,4 @@
-@import "../../index.css";
+@import '../../index.css';
 
 .aboutSection {
   display: flex;
@@ -39,9 +39,10 @@
   clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 30%);
   border-radius: 30px;
   padding: 20px;
+  padding-bottom: 80px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
 }
 
@@ -61,6 +62,18 @@
   line-height: 43.2px;
   letter-spacing: 1%;
   color: var(--heading-color);
+}
+
+@media (min-width: 480px) {
+  .cardInner h1 {
+    font-size: 169.81px;
+    line-height: 229.25px;
+  }
+
+  .cardInner p {
+    font-size: 32px;
+    line-height: 43.2px;
+  }
 }
 
 .about {
@@ -92,7 +105,7 @@
 }
 
 .about .firstline p {
-  font-family: "Playfair Display", serif;
+  font-family: 'Playfair Display', serif;
   font-weight: 400;
   font-size: 32.87px;
   line-height: 30.32px;
@@ -106,13 +119,11 @@
   font-size: 48px;
   line-height: 54.72px;
   letter-spacing: 0%;
-}
-.heading h2 {
   color: var(--heading-color);
 }
 
 .heading h2 span {
-  font-family: "Playfair display", serif;
+  font-family: 'Playfair display', serif;
   font-weight: 400;
   color: var(--secondary-color);
 }
@@ -163,7 +174,7 @@
 }
 
 .founder h1 {
-  font-family: "Alex Brush", serif;
+  font-family: 'Alex Brush', serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 21.6px;
@@ -236,4 +247,92 @@
   vertical-align: middle;
   padding: 15px;
   border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .aboutSection {
+    padding: 50px;
+  }
+  .abouttwo {
+    flex-direction: column;
+    width: 100%;
+  }
+  .about {
+    align-items: center;
+    padding: 20px;
+    gap: 30px;
+  }
+  .heading {
+    gap: 30px;
+  }
+  .batch {
+    width: 100%;
+  }
+  .founder {
+    align-self: flex-start;
+  }
+  .lowersection {
+    flex-direction: column;
+    gap: 30px;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .aboutSection {
+    padding: 30px;
+  }
+  .cardInner {
+    padding-bottom: 40px;
+  }
+  .cardInner h1 {
+    font-size: 80.81px;
+    line-height: 129.25px;
+  }
+  .cardInner p {
+    font-size: 18px;
+    line-height: 33px;
+  }
+
+  .about .firstline p {
+    font-size: 24px;
+    line-height: 20.32px;
+    letter-spacing: 8%;
+    color: #000000;
+  }
+
+  .heading h2 {
+    font-size: 32px;
+    line-height: 34.72px;
+  }
+
+  .about p {
+    font-size: 16px;
+    line-height: 17px;
+  }
+
+  .part h3 {
+    font-size: 24px;
+    line-height: 34.6px;
+  }
+
+  .part p {
+    font-size: 12px;
+    line-height: 17.6px;
+  }
+
+  .data p {
+    font-size: 12px;
+    line-height: 17.6px;
+  }
+
+  .section .info h2 {
+    font-size: 20px;
+    line-height: 22.4px;
+  }
+
+  .section .info p {
+    font-size: 12px;
+    line-height: 17.6px;
+  }
 }

@@ -14,7 +14,6 @@ export default function Services() {
   const [visibleServices, setVisibleServices] = useState<Service[]>([]);
   const initialCount = 6;
   const services: Service[] = servicesData;
-  const [animateClass, setAnimateClass] = useState('');
 
   useEffect(() => {
     if (showAll) {
@@ -25,18 +24,7 @@ export default function Services() {
   }, [showAll, services]);
 
   const toggleServices = () => {
-    if (showAll) {
-      // We're toggling from true to false: use animateOff
-      setAnimateClass(styles.animateOff);
-    } else {
-      // Toggling from false to true: use animateOn
-      setAnimateClass(styles.animateOn);
-    }
     setShowAll(!showAll);
-  };
-
-  const handleAnimationEnd = () => {
-    setAnimateClass('');
   };
 
   return (
@@ -53,9 +41,8 @@ export default function Services() {
         <button
           className={`${
             showAll ? styles.customButton : styles.customButtonTwo
-          } ${animateClass}`}
+          } `}
           onClick={toggleServices}
-          onAnimationEnd={handleAnimationEnd}
         >
           <p>View</p>
           <span className={showAll ? styles.btntext : styles.btntextTwo}>

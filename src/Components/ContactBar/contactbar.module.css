@@ -1,4 +1,5 @@
-@import "../../index.css";
+@import '../../index.css';
+
 /* Main Contact Bar Container */
 .contactbar {
   display: flex;
@@ -9,11 +10,32 @@
   min-height: 50px;
   height: auto;
   padding-inline: 8%;
+  transition: padding-inline 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .contactbar {
+    display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  .contactbar {
+    padding-inline: 4%;
+  }
+  .contactInfo {
+    font-size: 12px;
+  }
+
+  .contactSection {
+    gap: 10px;
+  }
 }
 
 /* Contact Info Section */
 .contactSection {
   display: flex;
+  align-items: center;
   gap: 20px;
 }
 
@@ -38,14 +60,3 @@
 }
 
 /* Responsive Design */
-@media (max-width: 1024px) {
-  .contactbar {
-    /* flex-direction: column; */
-    text-align: center;
-  }
-
-  .contactSection {
-    flex-direction: column;
-    gap: 10px;
-  }
-}

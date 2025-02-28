@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import styles from './navbar.module.css';
 import { Link, scrollSpy } from 'react-scroll';
+import { RxHamburgerMenu } from 'react-icons/rx';
 
 export default function Navbar() {
   const [isSticky, setIsSticky] = useState(false);
@@ -11,7 +12,9 @@ export default function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 60) {
+      if (window.scrollY > 60 && window.innerWidth > 768) {
+        setIsSticky(true);
+      } else if (window.innerWidth <= 768) {
         setIsSticky(true);
       } else {
         setIsSticky(false);
@@ -27,11 +30,7 @@ export default function Navbar() {
   return (
     <div className={`${styles.navbar} ${isSticky ? styles.sticky : ''}`}>
       <div className={styles.img}>
-        <img
-          src="./Apurvaarts.png"
-          alt="Placeholder Image"
-          style={{ width: '150px', height: '75px' }}
-        />
+        <img src="./Apurvaarts.png" alt="Placeholder Image" />
       </div>
       <div className={styles.section}>
         <nav className={styles.nav}>
@@ -82,6 +81,9 @@ export default function Navbar() {
           </Link>
         </nav>
         <button className={styles.btn}>Get Started</button>
+      </div>
+      <div className={styles.burger}>
+        <RxHamburgerMenu />
       </div>
     </div>
   );
