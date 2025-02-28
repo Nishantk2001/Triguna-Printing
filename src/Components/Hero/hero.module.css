@@ -102,18 +102,16 @@
   gap: 20px;
   border: none;
   border-radius: 50px;
-  /* background-color: #e2aa34; Golden Yellow */
-  /* padding: 0px 10px; */
   position: relative;
   max-width: 200px;
-  height: 52px;
+  height: 48px;
   cursor: pointer;
   transition: 0.3s ease-in-out;
   margin-top: 10px;
 }
 
 .icon {
-  background-color: var(--secondary-color); /* Dark Green */
+  background-color: var(--secondary-color);
   color: white;
   border-radius: 50%;
   width: 40px;
@@ -128,8 +126,8 @@
 
 .btntext {
   background-color: var(--accent-color);
-  /* flex-grow: 1; */
-  padding: 16.5px 25px;
+  padding: 14.5px 25px;
+  margin-top: 1px;
   border-radius: 50px;
   text-align: center;
   font-family: inherit;

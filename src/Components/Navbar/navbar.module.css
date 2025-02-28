@@ -1,4 +1,4 @@
-@import '../../index.css';
+@import "../../index.css";
 /* Main Contact Bar Container */
 .navbar {
   display: flex;
@@ -50,7 +50,7 @@
 
 .btn {
   background-color: var(--primary-color);
-  padding: 15px 30px;
+  padding: 14px 30px;
   color: white;
   border-radius: 999px;
   border: none;

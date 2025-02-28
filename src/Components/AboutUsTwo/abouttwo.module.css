@@ -36,12 +36,9 @@
   right: 23px;
   bottom: 23px;
   background: white;
-  /* Apply the same clip-path shape to mimic the cut corner */
   clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 30%);
   border-radius: 30px;
   padding: 20px;
-
-  /* Center content */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -78,6 +75,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+  gap: 30px;
 }
 
 .heading .firstline {
@@ -99,6 +97,7 @@
   font-size: 32.87px;
   line-height: 30.32px;
   letter-spacing: 12%;
+  color: #000000;
 }
 
 .heading h2 {
@@ -107,6 +106,9 @@
   font-size: 48px;
   line-height: 54.72px;
   letter-spacing: 0%;
+}
+.heading h2 {
+  color: var(--heading-color);
 }
 
 .heading h2 span {
@@ -121,7 +123,7 @@
   font-size: 20px;
   line-height: 27px;
   letter-spacing: 1%;
-  color: #5e5a5a;
+  color: var(--heading-color);
 }
 
 .batch {
@@ -161,7 +163,7 @@
 }
 
 .founder h1 {
-  font-family: "Playfair display", serif;
+  font-family: "Alex Brush", serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 21.6px;
