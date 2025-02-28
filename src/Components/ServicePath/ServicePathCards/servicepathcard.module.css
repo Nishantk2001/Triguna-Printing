@@ -1,0 +1,51 @@
+@import '../../../index.css';
+.servicecard {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  min-width: 250px;
+  transition: transform 0.2s ease-in-out;
+  border: none;
+  border-radius: 7px;
+  overflow: hidden;
+}
+
+.servicecard:hover {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  transform: scale(1.02);
+}
+
+.img {
+  flex: 2;
+  width: 100%;
+  aspect-ratio: 4/3;
+  background-color: #d9d9d9;
+}
+
+.info {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px;
+  background-color: #ffffff;
+  gap: 10px;
+}
+
+.info h3 {
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16.4px;
+  letter-spacing: 1%;
+  color: var(--heading-color);
+}
+
+.info p {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14.06px;
+  letter-spacing: 1%;
+}

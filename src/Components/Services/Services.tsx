@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react';
 import Card from './Card/Card';
 import styles from './services.module.css';
 import servicesData from '../../assets/services.json';
-import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 export interface Service {
   id: number;
   name: string;
@@ -15,6 +14,7 @@ export default function Services() {
   const [visibleServices, setVisibleServices] = useState<Service[]>([]);
   const initialCount = 6;
   const services: Service[] = servicesData;
+  const [animateClass, setAnimateClass] = useState('');
 
   useEffect(() => {
     if (showAll) {
@@ -25,7 +25,18 @@ export default function Services() {
   }, [showAll, services]);
 
   const toggleServices = () => {
-    setShowAll((prev) => !prev);
+    if (showAll) {
+      // We're toggling from true to false: use animateOff
+      setAnimateClass(styles.animateOff);
+    } else {
+      // Toggling from false to true: use animateOn
+      setAnimateClass(styles.animateOn);
+    }
+    setShowAll(!showAll);
+  };
+
+  const handleAnimationEnd = () => {
+    setAnimateClass('');
   };
 
   return (
@@ -40,8 +51,11 @@ export default function Services() {
       </div>
       <div className={styles.lowersection}>
         <button
-          className={showAll ? styles.customButton : styles.customButtonTwo}
+          className={`${
+            showAll ? styles.customButton : styles.customButtonTwo
+          } ${animateClass}`}
           onClick={toggleServices}
+          onAnimationEnd={handleAnimationEnd}
         >
           <p>View</p>
           <span className={showAll ? styles.btntext : styles.btntextTwo}>

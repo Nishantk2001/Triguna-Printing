@@ -84,8 +84,8 @@
   width: 210px;
   height: 48px;
   cursor: pointer;
-  transition: 0.3s ease-in-out;
   margin-top: 10px;
+  transition: background-color 1s ease-in-out;
 }
 .customButtonTwo {
   align-self: flex-end;
@@ -97,13 +97,12 @@
   border: none;
   border-radius: 50px;
   background-color: var(--heading-color);
-
   /* background-color: var(--accent-color); */
   position: relative;
   width: 210px;
   height: 48px;
   cursor: pointer;
-  transition: 0.3s ease-in-out;
+  transition: background-color 1s ease-in-out;
   margin-top: 10px;
 }
 
@@ -146,4 +145,30 @@
   line-height: 18.75px;
   letter-spacing: 1%;
   color: #ffffff;
+}
+
+.animateOn {
+  animation: toggleOn 0.7s ease-in-out forwards;
+}
+
+.animateOff {
+  animation: toggleOff 0.7s ease-in-out forwards;
+}
+
+@keyframes toggleOn {
+  0% {
+    background-color: var(--accent-color);
+  }
+  100% {
+    background-color: var(--heading-color);
+  }
+}
+
+@keyframes toggleOff {
+  0% {
+    background-color: var(--accent-color);
+  }
+  100% {
+    background-color: var(--heading-color);
+  }
 }

@@ -3,6 +3,8 @@ import './App.css';
 import HomePage from './Pages/HomePage/HomePage';
 import ContactBar from './Components/ContactBar/ContactBar';
 import Navbar from './Components/Navbar/Navbar';
+import Footer from './Components/Footer/Footer';
+import ServicePath from './Components/ServicePath/ServicePath';
 
 function App() {
   return (
@@ -12,8 +14,10 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/:path" element={<ServicePath />} />
         </Routes>
       </BrowserRouter>
+      <Footer />
     </>
   );
 }

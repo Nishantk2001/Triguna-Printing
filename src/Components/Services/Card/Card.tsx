@@ -1,7 +1,8 @@
-import React from "react";
-import styles from "./card.module.css";
-import { MdOutlineArrowOutward } from "react-icons/md";
-import { Service } from "../Services";
+import React from 'react';
+import styles from './card.module.css';
+import { MdOutlineArrowOutward } from 'react-icons/md';
+import { Service } from '../Services';
+import { Link } from 'react-router-dom';
 
 interface CardProps {
   service: Service;
@@ -22,9 +23,11 @@ const Card: React.FC<CardProps> = ({ service }) => {
             className={styles.serviceCardImage}
           />
         </div>
-        <button className={styles.btn}>
-          <MdOutlineArrowOutward size={30} className={styles.UpIcon} />
-        </button>
+        <Link to={`/${service.name}`}>
+          <button className={styles.btn}>
+            <MdOutlineArrowOutward size={30} className={styles.UpIcon} />
+          </button>
+        </Link>
       </div>
     </div>
   );
