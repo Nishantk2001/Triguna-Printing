@@ -3,8 +3,10 @@
   display: flex;
   align-items: center;
   padding-block: 150px;
-  background-color: var(--primary-color);
-  color: white;
+  /* background-color: var(--primary-color); */
+  background-image: url("homePageBG.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   padding-left: 7%;
 }
 
@@ -22,7 +24,6 @@
 .sectionRightHero {
   width: 80%;
   height: 600px;
-  /* background-color: white; */
 }
 .sectionRightHero img {
   width: 100%;
@@ -47,7 +48,7 @@
   font-size: 24px;
   line-height: 40.61px;
   letter-spacing: 15%;
-  color: #ffffff;
+  color: #000000;
 }
 
 .exp {
@@ -56,6 +57,7 @@
   font-size: 48px;
   line-height: 56.25px;
   letter-spacing: 9%;
+  color: #000000;
 }
 
 .text {
@@ -73,7 +75,7 @@
   font-size: 48px;
   line-height: 56.25px;
   letter-spacing: 9%;
-  color: #ffffff;
+  color: #000000;
 }
 
 .text2 {
@@ -82,7 +84,7 @@
   font-size: 48px;
   line-height: 56.25px;
   letter-spacing: 9%;
-  color: #ffffff;
+  color: #000000;
 }
 
 .paragraph {

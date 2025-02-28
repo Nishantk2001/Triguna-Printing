@@ -33,9 +33,9 @@ export default function Hero() {
         </button>
       </div>
       <div className={styles.rightsection}>
-        <div className={styles.sectionRightHero}>
+        {/* <div className={styles.sectionRightHero}>
           <img src="./heroImg.png" alt="Placeholder Image" />
-        </div>
+        </div> */}
       </div>
     </div>
   );
