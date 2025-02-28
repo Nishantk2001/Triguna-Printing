@@ -13,3 +13,11 @@
 .card {
   flex: 2;
 }
+
+@media (max-width: 850px) {
+  .contact {
+    padding: 50px;
+    flex-direction: column;
+    gap: 20px;
+  }
+}

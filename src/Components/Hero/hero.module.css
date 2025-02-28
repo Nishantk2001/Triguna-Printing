@@ -1,17 +1,17 @@
-@import "../../index.css";
+@import '../../index.css';
 .hero {
   display: flex;
   align-items: center;
   padding-block: 150px;
   /* background-color: var(--primary-color); */
-  background-image: url("homePageBG.png");
+  background-image: url('homePageBG.png');
   background-repeat: no-repeat;
   background-size: cover;
   padding-left: 7%;
 }
 
 .sectionHero {
-  flex: 1;
+  /* flex: 1; */
   display: flex;
   flex-direction: column;
   padding: 20px;
@@ -19,15 +19,6 @@
 }
 .rightsection {
   flex: 1;
-}
-
-.sectionRightHero {
-  width: 80%;
-  height: 600px;
-}
-.sectionRightHero img {
-  width: 100%;
-  height: 600px;
 }
 
 .firstline {
@@ -61,7 +52,7 @@
 }
 
 .text {
-  font-family: "Playfair Display", serif;
+  font-family: 'Playfair Display', serif;
   font-weight: 400;
   font-size: 48px;
   line-height: 57.6px;
@@ -105,7 +96,7 @@
   border: none;
   border-radius: 50px;
   position: relative;
-  max-width: 200px;
+  width: 200px;
   height: 48px;
   cursor: pointer;
   transition: 0.3s ease-in-out;
@@ -138,4 +129,55 @@
   line-height: 18.75px;
   letter-spacing: 1%;
   color: var(--text-color);
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding-left: 0;
+    width: 100%;
+    justify-content: center;
+    padding-block: 50px;
+  }
+  .firstline p {
+    font-size: 16px;
+  }
+
+  .exp {
+    font-size: 32px;
+  }
+  .text,
+  .text1,
+  .text2 {
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: 6%;
+  }
+
+  .paragraph {
+    max-width: 440px;
+    margin-block: 8px;
+    font-size: 12px;
+    line-height: 16.06px;
+    letter-spacing: 12%;
+  }
+
+  .customButton {
+    gap: 20px;
+    width: 150px;
+    height: 40px;
+    margin-top: 10px;
+  }
+
+  .icon {
+    width: 32px;
+    height: 32px;
+    font-size: 16px;
+  }
+
+  .btntext {
+    padding: 10px 20px;
+    font-size: 12px;
+    line-height: 16.75px;
+    letter-spacing: 1%;
+  }
 }

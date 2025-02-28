@@ -1,5 +1,5 @@
-import styles from "./hero.module.css";
-import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import styles from './hero.module.css';
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 export default function Hero() {
   return (
@@ -25,17 +25,12 @@ export default function Hero() {
           <span className={styles.icon}>
             <ArrowForwardIcon
               sx={{
-                fontSize: "30px",
+                fontSize: '30px',
               }}
             />
           </span>
           <span className={styles.btntext}>Get Started</span>
         </button>
-      </div>
-      <div className={styles.rightsection}>
-        {/* <div className={styles.sectionRightHero}>
-          <img src="./heroImg.png" alt="Placeholder Image" />
-        </div> */}
       </div>
     </div>
   );
