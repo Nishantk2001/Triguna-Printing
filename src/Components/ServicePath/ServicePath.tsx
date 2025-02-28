@@ -1,7 +1,7 @@
-import { Link, useParams } from 'react-router-dom';
-import styles from './servicepath.module.css';
-import service from '../../assets/service.json';
-import ServicePathCard from './ServicePathCards/ServicePathCard';
+import { Link, useParams } from "react-router-dom";
+import styles from "./servicepath.module.css";
+import service from "../../assets/service.json";
+import ServicePathCard from "./ServicePathCards/ServicePathCard";
 
 export default function ServicePath() {
   const { path } = useParams();
@@ -11,15 +11,15 @@ export default function ServicePath() {
       <div className={styles.path}>
         <Link to="/" className={styles.home}>
           Home
-        </Link>{' '}
+        </Link>{" "}
         / {path}
       </div>
       <div className={styles.header}>
-        <h1 className={styles.heading}>Business Cards</h1>
+        <h1 className={styles.heading}>{path}</h1>
         <p>Stand Out with a Card That Speaks for You!</p>
-        <button>Create Your Cards</button>
+        <button>Contact Us</button>
       </div>
-      <h2>Most Popular Business Cards</h2>
+      <h2>Most Popular {path}</h2>
       <div className={styles.cards}>
         {service.map((serv) => (
           <ServicePathCard service={serv} key={serv.id} />
