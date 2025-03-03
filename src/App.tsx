@@ -17,7 +17,7 @@ function App() {
           <Route path="/:path" element={<ServicePath />} />
         </Routes>
       </BrowserRouter>
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }

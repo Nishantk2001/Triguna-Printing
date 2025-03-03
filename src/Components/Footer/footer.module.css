@@ -110,3 +110,19 @@
 .copyRightsText p span {
   color: var(--accent-color);
 }
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 40px;
+  }
+  .footerContainer {
+    flex-direction: column;
+  }
+  .footerEmailInput {
+    display: none;
+  }
+
+  .rightFooterContent {
+    gap: 30px;
+  }
+}
