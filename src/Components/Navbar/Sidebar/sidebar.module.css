@@ -1,28 +1,45 @@
 /* Sidebar container */
 .sidebar {
-  position: fixed;
+  position: absolute;
   top: 0;
   right: -250px;
   width: 250px;
   height: 100vh;
   background: #0885b9;
   color: white;
-  padding: 20px;
-  transition: left 0.3s ease-in-out;
+  /* padding: 20px; */
+  transition: right 0.5s ease-in-out;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 /* When sidebar is open */
 .sidebar.open {
-  left: 0;
+  right: 0;
+}
+
+.upperpart {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.sidebar .upperpart h4 {
+  padding-left: 10px;
+  font-size: 24px;
 }
 
 /* Close button */
 .closeButton {
+  align-self: self-start;
   background: none;
   border: none;
   color: white;
-  font-size: 24px;
+  font-size: 16px;
   cursor: pointer;
+  padding: 10px;
 }
 
 /* Sidebar links */
@@ -33,8 +50,9 @@
 }
 
 .sidebar ul li {
-  padding: 10px;
+  padding: 20px;
   cursor: pointer;
+  font-size: 16px;
 }
 
 .sidebar ul li:hover {
@@ -51,6 +69,23 @@
   border: none;
   cursor: pointer;
   color: black;
+}
+
+.copyRightsText {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.copyRightsText p {
+  text-align: center;
+  font-size: 12px;
+}
+.copyRightsText p span {
+  color: var(--accent-color);
 }
 
 /* Mobile Styles */

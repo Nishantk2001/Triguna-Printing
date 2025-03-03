@@ -1,4 +1,4 @@
-@import "../../index.css";
+@import '../../index.css';
 /* Main Contact Bar Container */
 .navbar {
   display: flex;
@@ -24,29 +24,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 50px;
-  transition: gap 0.3s ease-in-out;
-}
-
-.nav .Link {
-  cursor: pointer;
-  font-size: 16px;
-  font-family: inherit;
-  font-weight: 500;
-  line-height: 18.75px;
-  letter-spacing: 1%;
-  transition: all 0.2s ease;
-}
-
-.Link.active {
-  color: blue !important;
-  font-size: 30px;
 }
 
 .btn {
@@ -101,6 +78,7 @@
     display: none;
   }
   .burger {
+    all: unset;
     display: block;
     margin-right: 5%;
     font-size: 20px;
@@ -109,6 +87,9 @@
 }
 @media (min-width: 769px) {
   .burger {
+    display: none;
+  }
+  .sidebar {
     display: none;
   }
 }

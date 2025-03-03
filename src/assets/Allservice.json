@@ -1,0 +1,741 @@
+[
+  {
+    "id": 1,
+    "name": "Business Cards Printing",
+    "description": "Premium quality business cards with custom designs.",
+    "imgUrl": "https://example.com/business-cards.jpg",
+    "path": {
+      "tagline": "Make a lasting first impression",
+      "bgImg": "https://example.com/business-cards-bg.jpg",
+      "cards": [
+        {
+          "cardId": 101,
+          "productName": "Glossy Business Card",
+          "cardImg": "https://example.com/glossy-card.jpg",
+          "price": "$10 for 100",
+          "description": "Glossy finish with sharp details."
+        },
+        {
+          "cardId": 102,
+          "productName": "Matte Business Card",
+          "cardImg": "https://example.com/matte-card.jpg",
+          "price": "$12 for 100",
+          "description": "Smooth matte finish for a classy look."
+        },
+        {
+          "cardId": 103,
+          "productName": "Textured Business Card",
+          "cardImg": "https://example.com/textured-card.jpg",
+          "price": "$15 for 100",
+          "description": "Elegant textured finish for a unique touch."
+        },
+        {
+          "cardId": 104,
+          "productName": "Foil Business Card",
+          "cardImg": "https://example.com/foil-card.jpg",
+          "price": "$20 for 100",
+          "description": "Gold or silver foil stamping for premium branding."
+        },
+        {
+          "cardId": 105,
+          "productName": "Embossed Business Card",
+          "cardImg": "https://example.com/embossed-card.jpg",
+          "price": "$18 for 100",
+          "description": "Raised embossed text for a professional feel."
+        },
+        {
+          "cardId": 106,
+          "productName": "Transparent Business Card",
+          "cardImg": "https://example.com/transparent-card.jpg",
+          "price": "$25 for 100",
+          "description": "Stylish semi-transparent plastic cards."
+        },
+        {
+          "cardId": 107,
+          "productName": "Metallic Business Card",
+          "cardImg": "https://example.com/metallic-card.jpg",
+          "price": "$30 for 100",
+          "description": "Metallic sheen for a bold statement."
+        },
+        {
+          "cardId": 108,
+          "productName": "QR Code Business Card",
+          "cardImg": "https://example.com/qrcode-card.jpg",
+          "price": "$12 for 100",
+          "description": "Includes a QR code for digital connectivity."
+        }
+      ]
+    }
+  },
+  {
+    "id": 2,
+    "name": "Flyer Printing",
+    "description": "Eye-catching flyers for marketing and promotions.",
+    "imgUrl": "https://example.com/flyers.jpg",
+    "path": {
+      "tagline": "Spread your message effectively",
+      "bgImg": "https://example.com/flyers-bg.jpg",
+      "cards": [
+        {
+          "cardId": 201,
+          "productName": "Glossy Flyers",
+          "cardImg": "https://example.com/glossy-flyer.jpg",
+          "price": "$20 for 100",
+          "description": "Shiny and attractive flyers."
+        },
+        {
+          "cardId": 202,
+          "productName": "Matte Flyers",
+          "cardImg": "https://example.com/matte-flyer.jpg",
+          "price": "$22 for 100",
+          "description": "Elegant matte finish."
+        },
+        {
+          "cardId": 203,
+          "productName": "Bi-Fold Flyers",
+          "cardImg": "https://example.com/bifold-flyer.jpg",
+          "price": "$30 for 100",
+          "description": "Folded design for more content."
+        },
+        {
+          "cardId": 204,
+          "productName": "Tri-Fold Flyers",
+          "cardImg": "https://example.com/trifold-flyer.jpg",
+          "price": "$35 for 100",
+          "description": "Great for brochures and menus."
+        },
+        {
+          "cardId": 205,
+          "productName": "Die-Cut Flyers",
+          "cardImg": "https://example.com/diecut-flyer.jpg",
+          "price": "$40 for 100",
+          "description": "Custom shape for unique branding."
+        },
+        {
+          "cardId": 206,
+          "productName": "Large Format Flyers",
+          "cardImg": "https://example.com/large-flyer.jpg",
+          "price": "$50 for 100",
+          "description": "Oversized flyers for maximum impact."
+        },
+        {
+          "cardId": 207,
+          "productName": "Recycled Paper Flyers",
+          "cardImg": "https://example.com/recycled-flyer.jpg",
+          "price": "$25 for 100",
+          "description": "Eco-friendly flyers with a natural feel."
+        },
+        {
+          "cardId": 208,
+          "productName": "Spot UV Flyers",
+          "cardImg": "https://example.com/spotuv-flyer.jpg",
+          "price": "$45 for 100",
+          "description": "Glossy highlights for added appeal."
+        }
+      ]
+    }
+  },
+  {
+    "id": 3,
+    "name": "Brochure Printing",
+    "description": "Professionally printed brochures for businesses.",
+    "imgUrl": "https://example.com/brochures.jpg",
+    "path": {
+      "tagline": "Showcase your brand with elegance",
+      "bgImg": "https://example.com/brochures-bg.jpg",
+      "cards": [
+        {
+          "cardId": 301,
+          "productName": "Tri-Fold Brochure",
+          "cardImg": "https://example.com/trifold-brochure.jpg",
+          "price": "$50 for 100",
+          "description": "Popular design with three panels."
+        },
+        {
+          "cardId": 302,
+          "productName": "Bi-Fold Brochure",
+          "cardImg": "https://example.com/bifold-brochure.jpg",
+          "price": "$45 for 100",
+          "description": "Simple yet elegant two-fold design."
+        },
+        {
+          "cardId": 303,
+          "productName": "Gate Fold Brochure",
+          "cardImg": "https://example.com/gatefold-brochure.jpg",
+          "price": "$60 for 100",
+          "description": "Opens like a gate for a stylish look."
+        },
+        {
+          "cardId": 304,
+          "productName": "Z-Fold Brochure",
+          "cardImg": "https://example.com/zfold-brochure.jpg",
+          "price": "$55 for 100",
+          "description": "Z-shaped folds for easy reading."
+        },
+        {
+          "cardId": 305,
+          "productName": "Mini Brochure",
+          "cardImg": "https://example.com/mini-brochure.jpg",
+          "price": "$40 for 100",
+          "description": "Compact yet informative."
+        },
+        {
+          "cardId": 306,
+          "productName": "Die-Cut Brochure",
+          "cardImg": "https://example.com/diecut-brochure.jpg",
+          "price": "$65 for 100",
+          "description": "Custom shapes for branding."
+        },
+        {
+          "cardId": 307,
+          "productName": "Spot UV Brochure",
+          "cardImg": "https://example.com/spotuv-brochure.jpg",
+          "price": "$70 for 100",
+          "description": "Glossy highlights for premium feel."
+        },
+        {
+          "cardId": 308,
+          "productName": "Eco-Friendly Brochure",
+          "cardImg": "https://example.com/eco-brochure.jpg",
+          "price": "$55 for 100",
+          "description": "Made with recycled materials."
+        }
+      ]
+    }
+  },
+  {
+    "id": 4,
+    "name": "Digital Printing",
+    "description": "High-quality digital prints for all your creative needs.",
+    "imgUrl": "https://example.com/digital-printing.jpg",
+    "path": {
+      "tagline": "Experience the future of printing with digital precision",
+      "bgImg": "https://example.com/digital-printing-bg.jpg",
+      "cards": [
+        {
+          "cardId": 401,
+          "productName": "Poster Printing",
+          "cardImg": "https://example.com/poster-printing.jpg",
+          "price": "$30 for 50",
+          "description": "Vibrant, full-color posters perfect for events."
+        },
+        {
+          "cardId": 402,
+          "productName": "Business Card Printing",
+          "cardImg": "https://example.com/business-card-printing.jpg",
+          "price": "$25 for 100",
+          "description": "Sleek and professional business cards."
+        },
+        {
+          "cardId": 403,
+          "productName": "Flyer Printing",
+          "cardImg": "https://example.com/flyer-printing.jpg",
+          "price": "$20 for 100",
+          "description": "Eye-catching flyers for promotions and events."
+        },
+        {
+          "cardId": 404,
+          "productName": "Banner Printing",
+          "cardImg": "https://example.com/banner-printing.jpg",
+          "price": "$40 for 10",
+          "description": "Large format banners for indoor and outdoor use."
+        },
+        {
+          "cardId": 405,
+          "productName": "Sticker Printing",
+          "cardImg": "https://example.com/sticker-printing.jpg",
+          "price": "$15 for 100",
+          "description": "Custom stickers with durable finishes."
+        },
+        {
+          "cardId": 406,
+          "productName": "Calendar Printing",
+          "cardImg": "https://example.com/calendar-printing.jpg",
+          "price": "$35 for 50",
+          "description": "Personalized calendars with full-color images."
+        },
+        {
+          "cardId": 407,
+          "productName": "Photo Printing",
+          "cardImg": "https://example.com/photo-printing.jpg",
+          "price": "$10 for 50",
+          "description": "High-resolution photo prints for memories."
+        },
+        {
+          "cardId": 408,
+          "productName": "Custom Art Prints",
+          "cardImg": "https://example.com/custom-art-printing.jpg",
+          "price": "$45 for 50",
+          "description": "Premium quality prints for your artwork."
+        }
+      ]
+    }
+  },
+  {
+    "id": 5,
+    "name": "Book Printing",
+    "description": "Expert book printing services for authors, publishers, and businesses.",
+    "imgUrl": "https://example.com/book-printing.jpg",
+    "path": {
+      "tagline": "Transform your words into a beautifully bound masterpiece",
+      "bgImg": "https://example.com/book-printing-bg.jpg",
+      "cards": [
+        {
+          "cardId": 501,
+          "productName": "Hardcover Book Printing",
+          "cardImg": "https://example.com/hardcover-book.jpg",
+          "price": "$120 for 50",
+          "description": "Durable, premium-quality hardcover books."
+        },
+        {
+          "cardId": 502,
+          "productName": "Paperback Book Printing",
+          "cardImg": "https://example.com/paperback-book.jpg",
+          "price": "$80 for 50",
+          "description": "Economical and versatile paperback printing."
+        },
+        {
+          "cardId": 503,
+          "productName": "Custom Binding",
+          "cardImg": "https://example.com/custom-binding.jpg",
+          "price": "$150 for 50",
+          "description": "Tailored binding solutions to match your style."
+        },
+        {
+          "cardId": 504,
+          "productName": "Short Run Book Printing",
+          "cardImg": "https://example.com/short-run-book.jpg",
+          "price": "$200 for 25",
+          "description": "Ideal for limited editions and small projects."
+        },
+        {
+          "cardId": 505,
+          "productName": "Full-Color Book Printing",
+          "cardImg": "https://example.com/fullcolor-book.jpg",
+          "price": "$140 for 50",
+          "description": "Vivid, full-color printing for illustrated books."
+        },
+        {
+          "cardId": 506,
+          "productName": "Custom Cover Design",
+          "cardImg": "https://example.com/custom-cover.jpg",
+          "price": "$100 for 50",
+          "description": "Personalized cover designs to stand out on shelves."
+        }
+      ]
+    }
+  },
+  {
+    "id": 6,
+    "name": "Large Format Printing",
+    "description": "High-quality large format printing services designed to make a bold impression for events, signage, and more.",
+    "imgUrl": "https://example.com/large-format-printing.jpg",
+    "path": {
+      "tagline": "Make a big impression with our large format prints",
+      "bgImg": "https://example.com/large-format-bg.jpg",
+      "cards": [
+        {
+          "cardId": 601,
+          "productName": "Banner Printing",
+          "cardImg": "https://example.com/banner-printing-large.jpg",
+          "price": "$50 for 10",
+          "description": "Vibrant, high-resolution banners for indoor and outdoor use."
+        },
+        {
+          "cardId": 602,
+          "productName": "Poster Printing",
+          "cardImg": "https://example.com/large-poster-printing.jpg",
+          "price": "$40 for 10",
+          "description": "Eye-catching posters with sharp detail and brilliant colors."
+        },
+        {
+          "cardId": 603,
+          "productName": "Signage Printing",
+          "cardImg": "https://example.com/signage-printing.jpg",
+          "price": "$70 for 10",
+          "description": "Durable and weather-resistant signage for all your business needs."
+        },
+        {
+          "cardId": 604,
+          "productName": "Trade Show Displays",
+          "cardImg": "https://example.com/trade-show-displays.jpg",
+          "price": "$150 for 5",
+          "description": "Custom displays designed to stand out at exhibitions and trade shows."
+        },
+        {
+          "cardId": 605,
+          "productName": "Vehicle Wrap Printing",
+          "cardImg": "https://example.com/vehicle-wrap-printing.jpg",
+          "price": "$300 for 1",
+          "description": "High-quality wraps that transform your vehicle into a moving billboard."
+        },
+        {
+          "cardId": 606,
+          "productName": "Exhibition Stand Graphics",
+          "cardImg": "https://example.com/exhibition-stand-graphics.jpg",
+          "price": "$200 for 1",
+          "description": "Stunning graphics to enhance your exhibition stand's visual impact."
+        },
+        {
+          "cardId": 607,
+          "productName": "Outdoor Billboards",
+          "cardImg": "https://example.com/outdoor-billboards.jpg",
+          "price": "$500 for 1",
+          "description": "Large, durable billboards designed for maximum outdoor visibility."
+        },
+        {
+          "cardId": 608,
+          "productName": "Fabric Backdrops",
+          "cardImg": "https://example.com/fabric-backdrops.jpg",
+          "price": "$120 for 5",
+          "description": "Smooth and wrinkle-free fabric backdrops ideal for events and photography."
+        }
+      ]
+    }
+  },
+  {
+    "id": 7,
+    "name": "Magazine Printing",
+    "description": "High-quality magazine printing services tailored for publishers and businesses.",
+    "imgUrl": "https://example.com/magazine-printing.jpg",
+    "path": {
+      "tagline": "Deliver your stories with style and precision",
+      "bgImg": "https://example.com/magazine-printing-bg.jpg",
+      "cards": [
+        {
+          "cardId": 701,
+          "productName": "Monthly Magazine Printing",
+          "cardImg": "https://example.com/monthly-magazine.jpg",
+          "price": "$100 for 500 copies",
+          "description": "Ideal for consistent monthly publication with high-quality finishes."
+        },
+        {
+          "cardId": 702,
+          "productName": "Weekly Magazine Printing",
+          "cardImg": "https://example.com/weekly-magazine.jpg",
+          "price": "$150 for 500 copies",
+          "description": "Fast turnaround and vibrant prints to keep your readers informed weekly."
+        },
+        {
+          "cardId": 703,
+          "productName": "Quarterly Magazine Printing",
+          "cardImg": "https://example.com/quarterly-magazine.jpg",
+          "price": "$120 for 500 copies",
+          "description": "Perfect for detailed features and in-depth stories with a polished look."
+        },
+        {
+          "cardId": 704,
+          "productName": "Custom Cover Design",
+          "cardImg": "https://example.com/custom-magazine-cover.jpg",
+          "price": "$80 per design",
+          "description": "Stand out with a unique cover that captures your brand essence."
+        },
+        {
+          "cardId": 705,
+          "productName": "Glossy Finish Magazine",
+          "cardImg": "https://example.com/glossy-magazine.jpg",
+          "price": "$110 for 500 copies",
+          "description": "High-gloss finish for a premium look and feel that enhances images."
+        },
+        {
+          "cardId": 706,
+          "productName": "Matte Finish Magazine",
+          "cardImg": "https://example.com/matte-magazine.jpg",
+          "price": "$105 for 500 copies",
+          "description": "Sleek matte finish providing a sophisticated, subtle aesthetic."
+        }
+      ]
+    }
+  },
+  {
+    "id": 8,
+    "name": "Sticker Printing",
+    "description": "Custom sticker printing services for businesses, events, and personal projects.",
+    "imgUrl": "https://example.com/sticker-printing.jpg",
+    "path": {
+      "tagline": "Stick your brand everywhere with style",
+      "bgImg": "https://example.com/sticker-printing-bg.jpg",
+      "cards": [
+        {
+          "cardId": 801,
+          "productName": "Die-Cut Stickers",
+          "cardImg": "https://example.com/diecut-sticker.jpg",
+          "price": "$20 for 100",
+          "description": "Custom shaped stickers that perfectly represent your brand."
+        },
+        {
+          "cardId": 802,
+          "productName": "Vinyl Stickers",
+          "cardImg": "https://example.com/vinyl-sticker.jpg",
+          "price": "$18 for 100",
+          "description": "Durable vinyl stickers suitable for outdoor use."
+        },
+        {
+          "cardId": 803,
+          "productName": "Clear Stickers",
+          "cardImg": "https://example.com/clear-sticker.jpg",
+          "price": "$22 for 100",
+          "description": "Transparent stickers that blend seamlessly with any surface."
+        },
+        {
+          "cardId": 804,
+          "productName": "Kiss-Cut Stickers",
+          "cardImg": "https://example.com/kisscut-sticker.jpg",
+          "price": "$25 for 100",
+          "description": "Easy to peel and apply, perfect for promotions."
+        },
+        {
+          "cardId": 805,
+          "productName": "Holographic Stickers",
+          "cardImg": "https://example.com/holographic-sticker.jpg",
+          "price": "$30 for 100",
+          "description": "Eye-catching holographic effects for a dynamic look."
+        },
+        {
+          "cardId": 806,
+          "productName": "Custom Die-Cut Shapes",
+          "cardImg": "https://example.com/custom-diecut-sticker.jpg",
+          "price": "$35 for 100",
+          "description": "Personalized sticker shapes to match your unique brand identity."
+        }
+      ]
+    }
+  },
+  {
+    "id": 9,
+    "name": "Poster Printing",
+    "description": "High-quality poster printing services to help you make a bold statement.",
+    "imgUrl": "https://example.com/poster-printing.jpg",
+    "path": {
+      "tagline": "Bring your visuals to life with stunning posters",
+      "bgImg": "https://example.com/poster-printing-bg.jpg",
+      "cards": [
+        {
+          "cardId": 901,
+          "productName": "Standard Poster Printing",
+          "cardImg": "https://example.com/standard-poster.jpg",
+          "price": "$25 for 50",
+          "description": "Vibrant posters perfect for events, promotions, and decor."
+        },
+        {
+          "cardId": 902,
+          "productName": "Large Format Poster Printing",
+          "cardImg": "https://example.com/large-format-poster.jpg",
+          "price": "$40 for 50",
+          "description": "Extra-large posters for maximum impact and visibility."
+        },
+        {
+          "cardId": 903,
+          "productName": "Matte Finish Posters",
+          "cardImg": "https://example.com/matte-poster.jpg",
+          "price": "$30 for 50",
+          "description": "Sophisticated matte finish posters with a refined look."
+        },
+        {
+          "cardId": 904,
+          "productName": "Glossy Finish Posters",
+          "cardImg": "https://example.com/glossy-poster.jpg",
+          "price": "$30 for 50",
+          "description": "Bright and vibrant glossy finish posters that stand out."
+        },
+        {
+          "cardId": 905,
+          "productName": "Custom Size Posters",
+          "cardImg": "https://example.com/custom-size-poster.jpg",
+          "price": "$35 for 50",
+          "description": "Tailored poster sizes to perfectly suit your project needs."
+        },
+        {
+          "cardId": 906,
+          "productName": "Eco-Friendly Poster Printing",
+          "cardImg": "https://example.com/eco-poster.jpg",
+          "price": "$28 for 50",
+          "description": "Sustainable poster printing using recycled materials."
+        },
+        {
+          "cardId": 907,
+          "productName": "Outdoor Poster Printing",
+          "cardImg": "https://example.com/outdoor-poster.jpg",
+          "price": "$45 for 50",
+          "description": "Weather-resistant posters designed for outdoor use."
+        },
+        {
+          "cardId": 908,
+          "productName": "Premium Art Posters",
+          "cardImg": "https://example.com/premium-art-poster.jpg",
+          "price": "$50 for 50",
+          "description": "High-resolution art posters that bring creativity to life."
+        }
+      ]
+    }
+  },
+  {
+    "id": 10,
+    "name": "Bill-Book Printing",
+    "description": "Professional bill-book printing services designed for invoices, receipts, and other financial documentation.",
+    "imgUrl": "https://example.com/bill-book-printing.jpg",
+    "path": {
+      "tagline": "Streamline your transactions with custom bill-book prints",
+      "bgImg": "https://example.com/bill-book-printing-bg.jpg",
+      "cards": [
+        {
+          "cardId": 1001,
+          "productName": "Standard Bill Book",
+          "cardImg": "https://example.com/standard-bill-book.jpg",
+          "price": "$75 for 100",
+          "description": "Essential bill books featuring a classic design for everyday use."
+        },
+        {
+          "cardId": 1002,
+          "productName": "Custom Bill Book",
+          "cardImg": "https://example.com/custom-bill-book.jpg",
+          "price": "$90 for 100",
+          "description": "Personalized bill books tailored to your brand's identity."
+        },
+        {
+          "cardId": 1003,
+          "productName": "Roll Bill Book",
+          "cardImg": "https://example.com/roll-bill-book.jpg",
+          "price": "$85 for 100",
+          "description": "Efficient roll format for high-volume transactions."
+        },
+        {
+          "cardId": 1004,
+          "productName": "Pocket Bill Book",
+          "cardImg": "https://example.com/pocket-bill-book.jpg",
+          "price": "$80 for 100",
+          "description": "Compact and portable bill books perfect for on-the-go professionals."
+        },
+        {
+          "cardId": 1005,
+          "productName": "Premium Bill Book",
+          "cardImg": "https://example.com/premium-bill-book.jpg",
+          "price": "$100 for 100",
+          "description": "High-quality, durable bill books with enhanced features for a professional look."
+        }
+      ]
+    }
+  },
+  {
+    "id": 11,
+    "name": "Commercial Printing",
+    "description": "Comprehensive printing solutions for businesses, large orders, and full-scale branding projects.",
+    "imgUrl": "https://example.com/commercial-printing.jpg",
+    "path": {
+      "tagline": "Empower your business with premium commercial printing",
+      "bgImg": "https://example.com/commercial-printing-bg.jpg",
+      "cards": [
+        {
+          "cardId": 1101,
+          "productName": "Business Brochures",
+          "cardImg": "https://example.com/business-brochures.jpg",
+          "price": "$60 for 100",
+          "description": "High-impact brochures designed to communicate your corporate message effectively."
+        },
+        {
+          "cardId": 1102,
+          "productName": "Corporate Stationery",
+          "cardImg": "https://example.com/corporate-stationery.jpg",
+          "price": "$45 for 100",
+          "description": "Custom letterheads, envelopes, and more to create a consistent brand identity."
+        },
+        {
+          "cardId": 1103,
+          "productName": "Direct Mail Pieces",
+          "cardImg": "https://example.com/direct-mail.jpg",
+          "price": "$70 for 100",
+          "description": "Eye-catching direct mail materials crafted for effective marketing campaigns."
+        },
+        {
+          "cardId": 1104,
+          "productName": "Catalog Printing",
+          "cardImg": "https://example.com/catalog-printing.jpg",
+          "price": "$150 for 100",
+          "description": "Detailed catalogs that showcase your products with high-quality finishes."
+        },
+        {
+          "cardId": 1105,
+          "productName": "Promotional Materials",
+          "cardImg": "https://example.com/promotional-materials.jpg",
+          "price": "$55 for 100",
+          "description": "Flyers, postcards, and other promotional items to elevate your marketing efforts."
+        },
+        {
+          "cardId": 1106,
+          "productName": "Packaging Printing",
+          "cardImg": "https://example.com/packaging-printing.jpg",
+          "price": "$200 for 100",
+          "description": "Custom packaging solutions that reflect your brand’s unique identity."
+        },
+        {
+          "cardId": 1107,
+          "productName": "Large Format Printing",
+          "cardImg": "https://example.com/commercial-large-format.jpg",
+          "price": "$300 for 10",
+          "description": "Striking banners and posters designed to make a bold statement at events."
+        },
+        {
+          "cardId": 1108,
+          "productName": "Custom Promotional Items",
+          "cardImg": "https://example.com/custom-promotional.jpg",
+          "price": "$90 for 50",
+          "description": "Unique printed items that help your business stand out from the competition."
+        }
+      ]
+    }
+  },
+  {
+    "id": 12,
+    "name": "Custom Packaging",
+    "description": "Tailor-made packaging solutions that blend creativity with functionality for a lasting brand impression.",
+    "imgUrl": "https://example.com/custom-packaging.jpg",
+    "path": {
+      "tagline": "Elevate your brand with packaging that speaks volumes",
+      "bgImg": "https://example.com/custom-packaging-bg.jpg",
+      "cards": [
+        {
+          "cardId": 1201,
+          "productName": "Folding Cartons",
+          "cardImg": "https://example.com/folding-cartons.jpg",
+          "price": "$100 for 100",
+          "description": "Custom printed cartons designed for retail products with a sleek finish."
+        },
+        {
+          "cardId": 1202,
+          "productName": "Rigid Boxes",
+          "cardImg": "https://example.com/rigid-boxes.jpg",
+          "price": "$150 for 50",
+          "description": "Premium rigid boxes that offer superior protection and a luxury feel."
+        },
+        {
+          "cardId": 1203,
+          "productName": "Corrugated Boxes",
+          "cardImg": "https://example.com/corrugated-boxes.jpg",
+          "price": "$80 for 100",
+          "description": "Durable and eco-friendly corrugated boxes for safe shipping and storage."
+        },
+        {
+          "cardId": 1204,
+          "productName": "Custom Labels",
+          "cardImg": "https://example.com/custom-labels.jpg",
+          "price": "$30 for 100",
+          "description": "Personalized labels to add the perfect finishing touch to your packaging."
+        },
+        {
+          "cardId": 1205,
+          "productName": "Sleeve Packaging",
+          "cardImg": "https://example.com/sleeve-packaging.jpg",
+          "price": "$90 for 100",
+          "description": "Innovative sleeve packaging that wraps your products in style."
+        },
+        {
+          "cardId": 1206,
+          "productName": "Eco-Friendly Packaging",
+          "cardImg": "https://example.com/eco-packaging.jpg",
+          "price": "$110 for 100",
+          "description": "Sustainable packaging solutions made from recycled and biodegradable materials."
+        }
+      ]
+    }
+  }
+]

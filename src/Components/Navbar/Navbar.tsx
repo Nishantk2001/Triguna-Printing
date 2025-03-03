@@ -1,10 +1,13 @@
-import { useEffect, useState } from "react";
-import styles from "./navbar.module.css";
-import { Link, scrollSpy } from "react-scroll";
-import { RxHamburgerMenu } from "react-icons/rx";
-import Sidebar from "./Sidebar/Sidebar";
+import { useEffect, useState } from 'react';
+import styles from './navbar.module.css';
+import { scrollSpy } from 'react-scroll';
+import { RxHamburgerMenu } from 'react-icons/rx';
+import Sidebar from './SIdebar/Sidebar';
+import Nav from './Nav/Nav';
 
 export default function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+
   const [isSticky, setIsSticky] = useState(false);
 
   useEffect(() => {
@@ -22,72 +25,26 @@ export default function Navbar() {
       }
     };
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll);
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
   return (
-    <div className={`${styles.navbar} ${isSticky ? styles.sticky : ""}`}>
+    <div className={`${styles.navbar} ${isSticky ? styles.sticky : ''}`}>
       <div className={styles.img}>
         <img src="./Apurvaarts.png" alt="Placeholder Image" />
       </div>
       <div className={styles.section}>
-        <nav className={styles.nav}>
-          <Link
-            activeClass="active"
-            to="home"
-            spy={true}
-            smooth={false}
-            duration={300}
-            className={styles.Link}
-          >
-            Home
-          </Link>
-          <Link
-            activeClass="active"
-            to="services"
-            spy={true}
-            smooth={false}
-            offset={-80}
-            duration={300}
-            className={styles.Link}
-          >
-            Services
-          </Link>
-
-          <Link
-            activeClass="active"
-            to="about"
-            spy={true}
-            smooth={false}
-            offset={-70}
-            duration={300}
-            className={styles.Link}
-          >
-            About Me
-          </Link>
-
-          <Link
-            activeClass="active"
-            to="contact"
-            spy={true}
-            smooth={false}
-            offset={-70}
-            duration={300}
-            className={styles.Link}
-          >
-            Contact
-          </Link>
-        </nav>
+        <Nav />
         <button className={styles.btn}>Get Started</button>
       </div>
-      <div className={styles.burger}>
+      <button className={styles.burger} onClick={() => setIsOpen(true)}>
         <RxHamburgerMenu />
-      </div>
-      <div>
-        <Sidebar />
+      </button>
+      <div className={styles.sidebar}>
+        <Sidebar isOpen={isOpen} setIsOpen={setIsOpen} />
       </div>
     </div>
   );
