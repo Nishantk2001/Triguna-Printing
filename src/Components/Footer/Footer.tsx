@@ -51,15 +51,6 @@ export default function Footer() {
             <p>apurvaarts.chd@gmail.com</p>
             <p>25/15 sector-42 Atawa Chandigarh</p>
           </div>
-          <div className={styles.footerEmailInput}>
-            <h3>Get the latest Information</h3>
-            <div className={styles.emailInput}>
-              <input type="email" placeholder="Enter your email address" />
-              <button>
-                <IoSend size={20} />
-              </button>
-            </div>
-          </div>
         </div>
       </div>
       <div className={styles.copyRightsContent}>

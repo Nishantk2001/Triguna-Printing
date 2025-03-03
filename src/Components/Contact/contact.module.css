@@ -1,7 +1,6 @@
 .contact {
   display: flex;
   align-items: center;
-  /* background-color: #fefefe; */
   padding: 80px;
   color: black;
 }
@@ -13,11 +12,29 @@
 .card {
   flex: 2;
 }
+.map {
+  display: none;
+}
 
-@media (max-width: 850px) {
+@media (max-width: 768px) {
   .contact {
     padding: 50px;
     flex-direction: column;
     gap: 20px;
   }
+  .map {
+    display: block;
+    width: 100%;
+  }
+  .card {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  /* .card {
+    flex: 1;
+  }
+  .contactForm {
+    flex: 1;
+  } */
 }

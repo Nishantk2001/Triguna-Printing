@@ -1,6 +1,8 @@
-import styles from './contact.module.css';
-import ContactCard from './ContactCard/ContactCard';
-import Form from './Form/Form';
+import styles from "./contact.module.css";
+import ContactCard from "./ContactCard/ContactCard";
+// import ContactCard from "./ContactCard/ContactCard";
+import Form from "./Form/Form";
+import MobileContactCard from "./MobileContactCard/MobileContactCard";
 export default function Contact() {
   return (
     <div className={styles.contact}>
@@ -9,6 +11,9 @@ export default function Contact() {
       </div>
       <div className={styles.card}>
         <ContactCard />
+      </div>
+      <div className={styles.map}>
+        <MobileContactCard />
       </div>
     </div>
   );
