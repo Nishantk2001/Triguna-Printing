@@ -1,5 +1,4 @@
-import styles from "./footer.module.css";
-import { IoSend } from "react-icons/io5";
+import styles from './footer.module.css';
 
 export default function Footer() {
   return (
@@ -10,7 +9,7 @@ export default function Footer() {
             <img
               src="./Apurvaarts.png"
               alt="Placeholder Image"
-              style={{ width: "150px", height: "75px" }}
+              style={{ width: '150px', height: '75px' }}
             />
           </div>
           <div className={styles.footerText}>

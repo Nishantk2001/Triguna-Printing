@@ -46,6 +46,10 @@
   letter-spacing: 3%;
   color: var(--text-color);
   transition: color 0.7s ease;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .card:hover .info p {
@@ -113,7 +117,50 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) and (min-width: 468px) {
+  .card {
+    gap: 10px;
+    padding: 10px;
+    max-width: 225px;
+    width: auto;
+    box-sizing: border-box;
+  }
+
+  .info {
+    gap: 2px;
+  }
+
+  .info span {
+    font-size: 14px;
+  }
+  .info p {
+    font-size: 12px;
+    line-height: 18.45px;
+  }
+
+  .card {
+    gap: 30px;
+    padding: 30px;
+  }
+
+  .img {
+    clip-path: polygon(
+      0 0,
+      100% 0,
+      100% calc(100% - 90px),
+      calc(100% - 90px) 100%,
+      0 100%
+    );
+  }
+
+  .btn {
+    width: 40px;
+    height: 40px;
+  }
+  .UpIcon:hover {
+    cursor: pointer;
+    transform: scale(1.05) translate(2px, -2px);
+  }
 }
 
 @media (max-width: 1024px) and (min-width: 768px) {
@@ -122,11 +169,15 @@
     box-sizing: border-box;
   }
 
+  .info {
+    gap: 5px;
+  }
+
   .info span {
     font-size: 20px;
   }
   .info p {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 18.45px;
   }
 
