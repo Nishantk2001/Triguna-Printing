@@ -47,6 +47,7 @@
   color: var(--text-color);
   transition: color 0.7s ease;
   display: -webkit-box;
+  line-clamp: 2;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
