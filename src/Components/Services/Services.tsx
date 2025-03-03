@@ -1,12 +1,26 @@
 import { useEffect, useState } from 'react';
 import Card from './Card/Card';
 import styles from './services.module.css';
-import servicesData from '../../assets/services.json';
+import servicesData from '../../assets/Allservice.json';
+
+export interface ICards {
+  cardId: number;
+  productName: string;
+  cardImg: string;
+  price: string;
+  description: string;
+}
+export interface IPath {
+  tagline: string;
+  bgImg: string;
+  cards: ICards[];
+}
 export interface Service {
   id: number;
   name: string;
   description: string;
   imageUrl: string;
+  path: IPath;
 }
 
 export default function Services() {

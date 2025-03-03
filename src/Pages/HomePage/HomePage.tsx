@@ -3,10 +3,11 @@ import Hero from '../../Components/Hero/Hero';
 import Services from '../../Components/Services/Services';
 import { Element } from 'react-scroll';
 import AboutUsTwo from '../../Components/AboutUsTwo/AboutUsTwo';
+import styles from './homepage.module.css';
 
 export default function HomePage() {
   return (
-    <div>
+    <div className={styles.home}>
       <Element name="home">
         <Hero />
       </Element>

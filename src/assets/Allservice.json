@@ -3,7 +3,7 @@
     "id": 1,
     "name": "Business Cards Printing",
     "description": "Premium quality business cards with custom designs.",
-    "imgUrl": "https://example.com/business-cards.jpg",
+    "imageUrl": "./Images/Business-cards.jpg",
     "path": {
       "tagline": "Make a lasting first impression",
       "bgImg": "https://example.com/business-cards-bg.jpg",
@@ -71,7 +71,7 @@
     "id": 2,
     "name": "Flyer Printing",
     "description": "Eye-catching flyers for marketing and promotions.",
-    "imgUrl": "https://example.com/flyers.jpg",
+    "imageUrl": "./Images/flyer-printing.jpg",
     "path": {
       "tagline": "Spread your message effectively",
       "bgImg": "https://example.com/flyers-bg.jpg",
@@ -139,7 +139,7 @@
     "id": 3,
     "name": "Brochure Printing",
     "description": "Professionally printed brochures for businesses.",
-    "imgUrl": "https://example.com/brochures.jpg",
+    "imageUrl": "./Images/brochure-printing.jpg",
     "path": {
       "tagline": "Showcase your brand with elegance",
       "bgImg": "https://example.com/brochures-bg.jpg",
@@ -207,7 +207,7 @@
     "id": 4,
     "name": "Digital Printing",
     "description": "High-quality digital prints for all your creative needs.",
-    "imgUrl": "https://example.com/digital-printing.jpg",
+    "imageUrl": "./Images/digital-printing.jpg",
     "path": {
       "tagline": "Experience the future of printing with digital precision",
       "bgImg": "https://example.com/digital-printing-bg.jpg",
@@ -275,7 +275,7 @@
     "id": 5,
     "name": "Book Printing",
     "description": "Expert book printing services for authors, publishers, and businesses.",
-    "imgUrl": "https://example.com/book-printing.jpg",
+    "imageUrl": "./Images/Books-printing.jpg",
     "path": {
       "tagline": "Transform your words into a beautifully bound masterpiece",
       "bgImg": "https://example.com/book-printing-bg.jpg",
@@ -329,7 +329,7 @@
     "id": 6,
     "name": "Large Format Printing",
     "description": "High-quality large format printing services designed to make a bold impression for events, signage, and more.",
-    "imgUrl": "https://example.com/large-format-printing.jpg",
+    "imageUrl": "./Images/large-format.jpg",
     "path": {
       "tagline": "Make a big impression with our large format prints",
       "bgImg": "https://example.com/large-format-bg.jpg",
@@ -397,7 +397,7 @@
     "id": 7,
     "name": "Magazine Printing",
     "description": "High-quality magazine printing services tailored for publishers and businesses.",
-    "imgUrl": "https://example.com/magazine-printing.jpg",
+    "imageUrl": "./Images/magazine-printing.jpg",
     "path": {
       "tagline": "Deliver your stories with style and precision",
       "bgImg": "https://example.com/magazine-printing-bg.jpg",
@@ -451,7 +451,7 @@
     "id": 8,
     "name": "Sticker Printing",
     "description": "Custom sticker printing services for businesses, events, and personal projects.",
-    "imgUrl": "https://example.com/sticker-printing.jpg",
+    "imageUrl": "./Images/sticker-printing.jpg",
     "path": {
       "tagline": "Stick your brand everywhere with style",
       "bgImg": "https://example.com/sticker-printing-bg.jpg",
@@ -505,7 +505,7 @@
     "id": 9,
     "name": "Poster Printing",
     "description": "High-quality poster printing services to help you make a bold statement.",
-    "imgUrl": "https://example.com/poster-printing.jpg",
+    "imageUrl": "./Images/poster-printing.jpg",
     "path": {
       "tagline": "Bring your visuals to life with stunning posters",
       "bgImg": "https://example.com/poster-printing-bg.jpg",
@@ -573,7 +573,7 @@
     "id": 10,
     "name": "Bill-Book Printing",
     "description": "Professional bill-book printing services designed for invoices, receipts, and other financial documentation.",
-    "imgUrl": "https://example.com/bill-book-printing.jpg",
+    "imageUrl": "./Images/bill-book.jpg",
     "path": {
       "tagline": "Streamline your transactions with custom bill-book prints",
       "bgImg": "https://example.com/bill-book-printing-bg.jpg",
@@ -620,7 +620,7 @@
     "id": 11,
     "name": "Commercial Printing",
     "description": "Comprehensive printing solutions for businesses, large orders, and full-scale branding projects.",
-    "imgUrl": "https://example.com/commercial-printing.jpg",
+    "imageUrl": "./Images/commercial-printing.jpg",
     "path": {
       "tagline": "Empower your business with premium commercial printing",
       "bgImg": "https://example.com/commercial-printing-bg.jpg",
@@ -688,7 +688,7 @@
     "id": 12,
     "name": "Custom Packaging",
     "description": "Tailor-made packaging solutions that blend creativity with functionality for a lasting brand impression.",
-    "imgUrl": "https://example.com/custom-packaging.jpg",
+    "imageUrl": "./Images/custome-printing.jpg",
     "path": {
       "tagline": "Elevate your brand with packaging that speaks volumes",
       "bgImg": "https://example.com/custom-packaging-bg.jpg",
