@@ -1,4 +1,4 @@
-@import '../../../index.css';
+@import "../../../index.css";
 .formSection {
   display: flex;
   flex-direction: column;
@@ -19,7 +19,7 @@
 }
 
 .firstline p {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-weight: 400;
   font-size: 32.87px;
   line-height: 30.32px;
@@ -36,7 +36,7 @@
 }
 
 .text span {
-  font-family: inherit;
+  font-family: "Playfair Display", serif;
   font-weight: 700;
   font-size: 48px;
   line-height: 44.29px;
@@ -79,6 +79,7 @@
   font-size: 24px;
   line-height: 18.45px;
   letter-spacing: 0%;
+  color: var(--text-color);
 }
 
 .inputbox input {
@@ -126,7 +127,6 @@
   border: none;
   border-radius: 50px;
   background-color: #000000;
-  /* padding: 0px 10px; */
   position: relative;
   max-width: 211px;
   height: 52px;
@@ -136,7 +136,7 @@
 }
 
 .icon {
-  background-color: white; /* Dark Green */
+  background-color: white;
   border-radius: 50%;
   width: 40px;
   height: 40px;
@@ -150,7 +150,6 @@
 
 .btntext {
   background-color: var(--accent-color);
-  /* flex-grow: 1; */
   padding: 16.5px 26px;
   border-radius: 50px;
   text-align: center;
@@ -160,4 +159,76 @@
   line-height: 18.75px;
   letter-spacing: 1%;
   color: black;
+}
+
+@media (max-width: 768px) {
+  /* .inputs {
+    flex-direction: column;
+  } */
+}
+
+@media (max-width: 480px) {
+  .firstline p {
+    font-size: 24px;
+  }
+  .text {
+    font-size: 32px;
+    line-height: 0px;
+    letter-spacing: 0%;
+    margin-bottom: 15px;
+  }
+  .text span {
+    font-family: "Playfair Display", serif;
+    font-size: 32px;
+    color: var(--secondary-color);
+  }
+  .inputbox label {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0%;
+  }
+  .inputbox input {
+    padding: 12px 24px;
+    width: 100%;
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 12px;
+  }
+  .form {
+    padding: 0;
+    gap: 20px;
+  }
+  .inputs {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .inputbox {
+    width: 100%;
+  }
+  .inputbox textarea {
+    padding: 12px 24px;
+    font-size: 12px;
+  }
+  .customButton {
+    gap: 20px;
+    width: 150px;
+    height: 40px;
+    margin-top: 10px;
+  }
+
+  .icon {
+    width: 32px;
+    height: 32px;
+    font-size: 16px;
+  }
+
+  .btntext {
+    padding: 10px 20px;
+    font-size: 12px;
+    line-height: 16.75px;
+    letter-spacing: 1%;
+  }
 }

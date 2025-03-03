@@ -43,7 +43,7 @@
   flex: 2;
   display: flex;
   /* gap: 40px; */
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .footerNav {
   display: flex;
@@ -115,14 +115,41 @@
   .footer {
     padding: 40px;
   }
-  .footerContainer {
-    flex-direction: column;
-  }
   .footerEmailInput {
     display: none;
   }
-
   .rightFooterContent {
-    gap: 30px;
+    flex: 1;
+  }
+  .rightFooterContent h3 {
+    font-size: 16px;
+  }
+  .rightFooterContent p {
+    font-size: 14px;
+  }
+  .copyRightsContent p {
+    font-size: 12px;
+  }
+}
+@media (max-width: 480px) {
+  .footerContainer {
+    flex-direction: column;
+    align-items: start;
+  }
+  .socialMedia {
+    gap: 20px;
+  }
+  .rightFooterContent {
+    margin-top: 20px;
+    gap: 20px;
+  }
+  .rightFooterContent h3 {
+    font-size: 16px;
+  }
+  .rightFooterContent p {
+    font-size: 14px;
+  }
+  .copyRightsContent p {
+    font-size: 12px;
   }
 }
