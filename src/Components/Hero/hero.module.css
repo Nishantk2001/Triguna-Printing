@@ -1,10 +1,10 @@
-@import '../../index.css';
+@import "../../index.css";
 .hero {
   display: flex;
   align-items: center;
   padding-block: 150px;
   /* background-color: var(--primary-color); */
-  background-image: url('homebg.png');
+  background-image: url("homebg.png");
   background-repeat: no-repeat;
   background-size: cover;
   padding-left: 7%;
@@ -52,7 +52,7 @@
 }
 
 .text {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-weight: 400;
   font-size: 48px;
   line-height: 57.6px;
@@ -86,6 +86,7 @@
   font-size: 14px;
   line-height: 20.06px;
   letter-spacing: 15%;
+  color: #000000;
 }
 
 .customButton {
