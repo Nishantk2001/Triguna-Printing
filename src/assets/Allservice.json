@@ -4,9 +4,10 @@
     "name": "Business Cards Printing",
     "description": "Premium quality business cards with custom designs.",
     "imageUrl": "./Images/Business-cards.jpg",
+
     "path": {
       "tagline": "Make a lasting first impression",
-      "bgImg": "https://example.com/business-cards-bg.jpg",
+      "bgImg": "./Images/backgroundService.png",
       "cards": [
         {
           "cardId": 101,
@@ -74,7 +75,7 @@
     "imageUrl": "./Images/flyer-printing.jpg",
     "path": {
       "tagline": "Spread your message effectively",
-      "bgImg": "https://example.com/flyers-bg.jpg",
+      "bgImg": "./Images/flyerprint.png",
       "cards": [
         {
           "cardId": 201,
@@ -142,7 +143,7 @@
     "imageUrl": "./Images/brochure-printing.jpg",
     "path": {
       "tagline": "Showcase your brand with elegance",
-      "bgImg": "https://example.com/brochures-bg.jpg",
+      "bgImg": "./Images/brochureprint.png",
       "cards": [
         {
           "cardId": 301,
@@ -210,7 +211,7 @@
     "imageUrl": "./Images/digital-printing.jpg",
     "path": {
       "tagline": "Experience the future of printing with digital precision",
-      "bgImg": "https://example.com/digital-printing-bg.jpg",
+      "bgImg": "./Images/digitalprint.png",
       "cards": [
         {
           "cardId": 401,
@@ -278,7 +279,7 @@
     "imageUrl": "./Images/Books-printing.jpg",
     "path": {
       "tagline": "Transform your words into a beautifully bound masterpiece",
-      "bgImg": "https://example.com/book-printing-bg.jpg",
+      "bgImg": "./Images/bookprint.png",
       "cards": [
         {
           "cardId": 501,
@@ -332,7 +333,7 @@
     "imageUrl": "./Images/large-format.jpg",
     "path": {
       "tagline": "Make a big impression with our large format prints",
-      "bgImg": "https://example.com/large-format-bg.jpg",
+      "bgImg": "./Images/largeprint.png",
       "cards": [
         {
           "cardId": 601,
@@ -400,7 +401,7 @@
     "imageUrl": "./Images/magazine-printing.jpg",
     "path": {
       "tagline": "Deliver your stories with style and precision",
-      "bgImg": "https://example.com/magazine-printing-bg.jpg",
+      "bgImg": "./Images/magzineprint.png",
       "cards": [
         {
           "cardId": 701,
@@ -454,7 +455,7 @@
     "imageUrl": "./Images/sticker-printing.jpg",
     "path": {
       "tagline": "Stick your brand everywhere with style",
-      "bgImg": "https://example.com/sticker-printing-bg.jpg",
+      "bgImg": "./Images/stickerprint.png",
       "cards": [
         {
           "cardId": 801,
@@ -508,7 +509,7 @@
     "imageUrl": "./Images/poster-printing.jpg",
     "path": {
       "tagline": "Bring your visuals to life with stunning posters",
-      "bgImg": "https://example.com/poster-printing-bg.jpg",
+      "bgImg": "./Images/posterprint.png",
       "cards": [
         {
           "cardId": 901,
@@ -576,7 +577,7 @@
     "imageUrl": "./Images/bill-book.jpg",
     "path": {
       "tagline": "Streamline your transactions with custom bill-book prints",
-      "bgImg": "https://example.com/bill-book-printing-bg.jpg",
+      "bgImg": "./Images/billprint.png",
       "cards": [
         {
           "cardId": 1001,
@@ -623,7 +624,7 @@
     "imageUrl": "./Images/commercial-printing.jpg",
     "path": {
       "tagline": "Empower your business with premium commercial printing",
-      "bgImg": "https://example.com/commercial-printing-bg.jpg",
+      "bgImg": "./Images/commercialprint.png",
       "cards": [
         {
           "cardId": 1101,
@@ -691,7 +692,7 @@
     "imageUrl": "./Images/custome-printing.jpg",
     "path": {
       "tagline": "Elevate your brand with packaging that speaks volumes",
-      "bgImg": "https://example.com/custom-packaging-bg.jpg",
+      "bgImg": "./Images/customeprint.png",
       "cards": [
         {
           "cardId": 1201,
