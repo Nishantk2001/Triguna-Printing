@@ -1,7 +1,8 @@
-import { useEffect, useState } from 'react';
-import styles from './navbar.module.css';
-import { Link, scrollSpy } from 'react-scroll';
-import { RxHamburgerMenu } from 'react-icons/rx';
+import { useEffect, useState } from "react";
+import styles from "./navbar.module.css";
+import { Link, scrollSpy } from "react-scroll";
+import { RxHamburgerMenu } from "react-icons/rx";
+import Sidebar from "./Sidebar/Sidebar";
 
 export default function Navbar() {
   const [isSticky, setIsSticky] = useState(false);
@@ -21,14 +22,14 @@ export default function Navbar() {
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
   return (
-    <div className={`${styles.navbar} ${isSticky ? styles.sticky : ''}`}>
+    <div className={`${styles.navbar} ${isSticky ? styles.sticky : ""}`}>
       <div className={styles.img}>
         <img src="./Apurvaarts.png" alt="Placeholder Image" />
       </div>
@@ -84,6 +85,9 @@ export default function Navbar() {
       </div>
       <div className={styles.burger}>
         <RxHamburgerMenu />
+      </div>
+      <div>
+        <Sidebar />
       </div>
     </div>
   );
