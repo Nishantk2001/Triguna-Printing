@@ -1,4 +1,4 @@
-@import "../../../index.css";
+@import '../../../index.css';
 .contactcard {
   display: flex;
   flex-direction: column;
