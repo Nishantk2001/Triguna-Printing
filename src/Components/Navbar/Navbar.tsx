@@ -1,35 +1,50 @@
-import { useEffect, useState } from 'react';
-import styles from './navbar.module.css';
+import { useEffect, useState } from "react";
+import styles from "./navbar.module.css";
+import { scrollSpy } from "react-scroll";
+import { RxHamburgerMenu } from "react-icons/rx";
+import Sidebar from "./SIdebar/Sidebar";
+import Nav from "./Nav/Nav";
+
 export default function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+
   const [isSticky, setIsSticky] = useState(false);
+
+  useEffect(() => {
+    scrollSpy.update();
+  }, []);
+
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 60) {
+      if (window.scrollY > 60 && window.innerWidth > 768) {
+        setIsSticky(true);
+      } else if (window.innerWidth <= 768) {
         setIsSticky(true);
       } else {
         setIsSticky(false);
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
   return (
-    <div className={`${styles.navbar} ${isSticky ? styles.sticky : ''}`}>
+    <div className={`${styles.navbar} ${isSticky ? styles.sticky : ""}`}>
       <div className={styles.img}>
-        <img src="./Apurvaarts.png" alt="Placeholder Image" style={{ width: '150px', height: '75px'}} />
+        <img src="./Apurvaarts.png" alt="Placeholder Image" />
       </div>
       <div className={styles.section}>
-        <nav className={styles.nav}>
-          <p>Home</p>
-          <p>Services</p>
-          <p>Projects</p>
-          <p>About Us</p>
-          <p>Contact</p>
-        </nav>
-        <button className={styles.btn}>Get Started</button>
+        <Nav />
+        <button className={styles.btn}>Business Support</button>
+      </div>
+      <button className={styles.burger} onClick={() => setIsOpen(true)}>
+        <RxHamburgerMenu />
+      </button>
+      <div className={styles.sidebar}>
+        <Sidebar isOpen={isOpen} setIsOpen={setIsOpen} />
       </div>
     </div>
   );

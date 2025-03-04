@@ -1,11 +1,11 @@
-@import "../../index.css";
+@import '../../index.css';
 .services {
   margin-block: 50px;
   display: flex;
-  /* justify-content: center; */
   align-items: center;
   flex-direction: column;
   gap: 40px;
+  padding-inline: 10px;
 }
 
 .firstsection {
@@ -54,10 +54,182 @@
   color: var(--secondary-color);
 }
 
+.lowersection {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .cardbox {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 40px;
+  gap: 30px;
+}
+
+.customButton {
+  align-self: flex-end;
+  margin-right: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+  border: none;
+  border-radius: 50px;
+  background-color: var(--heading-color);
+  position: relative;
+  width: 210px;
+  height: 48px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 1s ease-in-out;
+}
+.customButtonTwo {
+  align-self: flex-end;
+  margin-right: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  border: none;
+  border-radius: 50px;
+  background-color: var(--heading-color);
+  position: relative;
+  width: 210px;
+  height: 48px;
+  cursor: pointer;
+  transition: background-color 1s ease-in-out;
+  margin-top: 10px;
+}
+
+.customButton p {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18.75px;
+  letter-spacing: 1%;
+  color: #ffffff;
+}
+.customButtonTwo p {
+  background-color: var(--accent-color);
+  font-weight: 600;
+  padding: 10px 18px;
+  margin-left: 5px;
+  border-radius: 50px;
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 18.75px;
+  letter-spacing: 1%;
+  color: var(--text-color);
+}
+
+.btntext {
+  background-color: var(--accent-color);
+  padding: 10px 18px;
+  margin-right: 5px;
+  border-radius: 50px;
+  text-align: center;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18.75px;
+  letter-spacing: 1%;
+  color: var(--text-color);
+}
+.btntextTwo {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18.75px;
+  letter-spacing: 1%;
+  color: #ffffff;
+}
+
+@media (max-width: 480px) {
+  .firstline p {
+    font-size: 24.87px;
+    line-height: 20.32px;
+    letter-spacing: 8%;
+  }
+  .line2 {
+    font-size: 32px;
+    line-height: 39.05px;
+    letter-spacing: 0%;
+  }
+
+  .line3 {
+    place-items: center;
+    font-size: 20px;
+    line-height: 13.21px;
+    letter-spacing: 0%;
+  }
+
+  .customButton {
+    margin-right: 30px;
+    align-self: center;
+    gap: 10px;
+    width: 170px;
+    height: 40px;
+  }
+
+  .customButtonTwo {
+    align-self: center;
+    margin-right: 30px;
+    gap: 10px;
+    width: 170px;
+    height: 40px;
+  }
+  .btntext {
+    padding: 7px 8px;
+  }
+
+  .customButtonTwo p {
+    padding: 7px 8px;
+  }
+  .services {
+    gap: 20px;
+  }
+  .firstsection {
+    gap: 10px;
+  }
+  .cardbox {
+    width: 100%;
+  }
+  .cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 480px) {
+  .line2 {
+    font-size: 48px;
+    line-height: 49.05px;
+    letter-spacing: 0%;
+  }
+
+  .line3 {
+    place-items: center;
+    font-size: 24px;
+    line-height: 23.21px;
+    letter-spacing: 0%;
+  }
+
+  .cardbox {
+    gap: 10px;
+  }
+
+  .customButton {
+    margin-right: 40px;
+    align-self: center;
+    gap: 20px;
+  }
+
+  .customButtonTwo {
+    align-self: center;
+    margin-right: 40px;
+    gap: 20px;
+  }
 }

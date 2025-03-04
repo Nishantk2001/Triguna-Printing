@@ -1,10 +1,10 @@
-@import "../../index.css";
+@import '../../index.css';
 /* Main Contact Bar Container */
 .navbar {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background: #ffffff;
+  background: #efefef;
   width: 100%;
   min-height: 75px;
   height: auto;
@@ -16,7 +16,7 @@
   top: 0;
   left: 0;
   z-index: 999;
-  background-color: #fffcfc;
+  background-color: #e3e3e3;
 }
 
 .img {
@@ -26,24 +26,9 @@
   justify-content: center;
 }
 
-.nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 50px;
-}
-
-.nav p {
-  font-size: 16px;
-  font-family: inherit;
-  font-weight: 500;
-  line-height: 18.75px;
-  letter-spacing: 1%;
-}
-
 .btn {
   background-color: var(--primary-color);
-  padding: 15px 30px;
+  padding: 14px 30px;
   color: white;
   border-radius: 999px;
   border: none;
@@ -58,4 +43,53 @@
   flex: 20;
   display: flex;
   justify-content: space-around;
+}
+.img img {
+  width: 150px;
+  height: 75px;
+  transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
+}
+
+@media (max-width: 1024px) {
+  .img {
+    margin-left: 5%;
+    justify-content: flex-start;
+  }
+
+  .img img {
+    height: 50px;
+    width: 100px;
+  }
+  .nav {
+    gap: 30px;
+  }
+
+  .btn {
+    font-size: 12px;
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .img {
+    margin-left: 10%;
+  }
+  .section {
+    display: none;
+  }
+  .burger {
+    all: unset;
+    display: block;
+    margin-right: 5%;
+    font-size: 20px;
+    font-weight: 600;
+  }
+}
+@media (min-width: 769px) {
+  .burger {
+    display: none;
+  }
+  .sidebar {
+    display: none;
+  }
 }

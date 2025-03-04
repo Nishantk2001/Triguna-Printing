@@ -1,22 +1,45 @@
 import { useEffect, useState } from 'react';
 import Card from './Card/Card';
 import styles from './services.module.css';
+import servicesData from '../../assets/Allservice.json';
+
+export interface ICards {
+  cardId: number;
+  productName: string;
+  cardImg: string;
+  price: string;
+  description: string;
+}
+export interface IPath {
+  tagline: string;
+  bgImg: string;
+  cards: ICards[];
+}
 export interface Service {
   id: number;
   name: string;
   description: string;
   imageUrl: string;
+  path: IPath;
 }
 
 export default function Services() {
-  const [services, setServices] = useState([]);
+  const [showAll, setShowAll] = useState<boolean>(false);
+  const [visibleServices, setVisibleServices] = useState<Service[]>([]);
+  const initialCount = 6;
+  const services: Service[] = servicesData;
 
   useEffect(() => {
-    fetch('./services.json')
-      .then((response) => response.json())
-      .then((data) => setServices(data))
-      .catch((error) => console.error('Error fetching services:', error));
-  }, []);
+    if (showAll) {
+      setVisibleServices(services);
+    } else {
+      setVisibleServices(services.slice(0, initialCount));
+    }
+  }, [showAll, services]);
+
+  const toggleServices = () => {
+    setShowAll(!showAll);
+  };
 
   return (
     <div className={styles.services}>
@@ -28,12 +51,25 @@ export default function Services() {
         <p className={styles.line2}>Explore our Services</p>
         <p className={styles.line3}> Print Your Vision, Make It Reality!</p>
       </div>
-      <div className={styles.cardbox}>
-        {services.map((service: Service) => (
-          <div key={service.id}>
-            <Card service={service} />
-          </div>
-        ))}
+      <div className={styles.lowersection}>
+        <button
+          className={`${
+            showAll ? styles.customButton : styles.customButtonTwo
+          } `}
+          onClick={toggleServices}
+        >
+          <p>View</p>
+          <span className={showAll ? styles.btntext : styles.btntextTwo}>
+            View All Services
+          </span>
+        </button>
+        <div className={styles.cardbox}>
+          {visibleServices.map((service: Service) => (
+            <div key={service.id} className={styles.cards}>
+              <Card service={service} />
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

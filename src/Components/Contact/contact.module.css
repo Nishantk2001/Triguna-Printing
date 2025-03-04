@@ -1,15 +1,38 @@
 .contact {
   display: flex;
   align-items: center;
-  background-color: #f0f0f0;
-  padding: 80px;
+  padding: 40px;
   color: black;
 }
-
 .contactForm {
   flex: 3;
 }
-
 .card {
   flex: 2;
+}
+.map {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .contact {
+    padding: 50px;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .map {
+    display: block;
+    width: 100%;
+  }
+  .card {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  /* .card {
+    flex: 1;
+  }
+  .contactForm {
+    flex: 1;
+  } */
 }

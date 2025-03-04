@@ -1,6 +1,7 @@
-import { ChangeEvent, FormEvent, useState } from 'react';
-import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
-import styles from './form.module.css';
+import { ChangeEvent, FormEvent, useState } from "react";
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import styles from "./form.module.css";
+import MessageBox from "../../MessageBox/MessageBox";
 interface FormData {
   name: string;
   email: string;
@@ -16,12 +17,13 @@ interface FormErrors {
 
 export default function Form(): JSX.Element {
   const [formData, setFormData] = useState<FormData>({
-    name: '',
-    email: '',
-    subject: '',
-    message: '',
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
   });
   const [errors, setErrors] = useState<FormErrors>({});
+  const [isSubmit, setIsSubmit] = useState(false);
 
   const handleChange = (
     e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -32,19 +34,19 @@ export default function Form(): JSX.Element {
   const validate = (): FormErrors => {
     const newErrors: FormErrors = {};
     if (!formData.name.trim()) {
-      newErrors.name = 'Name is required';
+      newErrors.name = "Name is required";
     }
 
     // Simple email regex
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!formData.email.trim()) {
-      newErrors.email = 'Email is required';
+      newErrors.email = "Email is required";
     } else if (!emailRegex.test(formData.email)) {
-      newErrors.email = 'Email is invalid';
+      newErrors.email = "Email is invalid";
     }
 
     if (!formData.subject.trim()) {
-      newErrors.subject = 'Message is required';
+      newErrors.subject = "Message is required";
     }
 
     return newErrors;
@@ -58,9 +60,9 @@ export default function Form(): JSX.Element {
       return;
     }
     setErrors({});
-    console.log('Form Data Submitted:', formData);
-    alert('Form submitted successfully!');
-    setFormData({ name: '', email: '', subject: '', message: '' });
+    setIsSubmit(true);
+    console.log("Form Data Submitted:", formData);
+    setFormData({ name: "", email: "", subject: "", message: "" });
   };
 
   return (
@@ -79,7 +81,7 @@ export default function Form(): JSX.Element {
             <input
               type="text"
               name="name"
-              placeholder="Ex. Nishant K"
+              placeholder="name"
               value={formData.name}
               onChange={handleChange}
               required
@@ -126,13 +128,14 @@ export default function Form(): JSX.Element {
           <span className={styles.icon}>
             <ArrowForwardIcon
               sx={{
-                fontSize: '30px',
+                fontSize: "30px",
               }}
             />
           </span>
           <span className={styles.btntext}>Get Started</span>
         </button>
       </form>
+      {isSubmit && <MessageBox submit={setIsSubmit} />}
     </div>
   );
 }

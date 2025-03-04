@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "Card Product 1",
+    "url": "https://example.com/images/card1.png",
+    "price": "₹150 Each for 100 Pieces"
+  },
+  {
+    "id": 2,
+    "name": "Card Product 2",
+    "url": "https://example.com/images/card2.png",
+    "price": "₹175 Each for 100 Pieces"
+  },
+  {
+    "id": 3,
+    "name": "Card Product 3",
+    "url": "https://example.com/images/card3.png",
+    "price": "₹160 Each for 100 Pieces"
+  },
+  {
+    "id": 4,
+    "name": "Card Product 4",
+    "url": "https://example.com/images/card4.png",
+    "price": "₹180 Each for 100 Pieces"
+  },
+  {
+    "id": 5,
+    "name": "Card Product 5",
+    "url": "https://example.com/images/card5.png",
+    "price": "₹200 Each for 100 Pieces"
+  },
+  {
+    "id": 6,
+    "name": "Card Product 6",
+    "url": "https://example.com/images/card6.png",
+    "price": "₹220 Each for 100 Pieces"
+  },
+  {
+    "id": 7,
+    "name": "Card Product 7",
+    "url": "https://example.com/images/card7.png",
+    "price": "₹210 Each for 100 Pieces"
+  },
+  {
+    "id": 8,
+    "name": "Card Product 8",
+    "url": "https://example.com/images/card8.png",
+    "price": "₹190 Each for 100 Pieces"
+  },
+  {
+    "id": 9,
+    "name": "Card Product 9",
+    "url": "https://example.com/images/card9.png",
+    "price": "₹230 Each for 100 Pieces"
+  },
+  {
+    "id": 10,
+    "name": "Card Product 10",
+    "url": "https://example.com/images/card10.png",
+    "price": "₹250 Each for 100 Pieces"
+  },
+  {
+    "id": 11,
+    "name": "Card Product 11",
+    "url": "https://example.com/images/card11.png",
+    "price": "₹240 Each for 100 Pieces"
+  },
+  {
+    "id": 12,
+    "name": "Card Product 12",
+    "url": "https://example.com/images/card12.png",
+    "price": "₹260 Each for 100 Pieces"
+  }
+]

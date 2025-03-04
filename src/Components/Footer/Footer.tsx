@@ -1,5 +1,4 @@
-import styles from "./footer.module.css";
-import { IoSend } from "react-icons/io5";
+import styles from './footer.module.css';
 
 export default function Footer() {
   return (
@@ -10,14 +9,15 @@ export default function Footer() {
             <img
               src="./Apurvaarts.png"
               alt="Placeholder Image"
-              style={{ width: "150px", height: "75px" }}
+              style={{ width: '150px', height: '75px' }}
             />
           </div>
           <div className={styles.footerText}>
             <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the
+              At Apurva Arts, we bring your ideas to life with high-quality
+              printing services tailored to meet your needs. Whether it's paper,
+              clothing, flex, posters, cups, visiting cards, books, or any other
+              type of printing
             </p>
           </div>
           <div className={styles.socialMedia}>
@@ -46,18 +46,9 @@ export default function Footer() {
           </div>
           <div className={styles.footerContact}>
             <h3>Contact</h3>
-            <p>+1 234 567 890</p>
-            <p>support@example.com</p>
+            <p>+91 94170 50564</p>
+            <p>apurvaarts.chd@gmail.com</p>
             <p>25/15 sector-42 Atawa Chandigarh</p>
-          </div>
-          <div className={styles.footerEmailInput}>
-            <h3>Get the latest Information</h3>
-            <div className={styles.emailInput}>
-              <input type="email" placeholder="Enter your email address" />
-              <button>
-                <IoSend size={20} />
-              </button>
-            </div>
           </div>
         </div>
       </div>
