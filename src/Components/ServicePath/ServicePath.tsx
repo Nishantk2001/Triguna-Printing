@@ -1,9 +1,9 @@
-import { Link, useParams } from "react-router-dom";
-import styles from "./servicepath.module.css";
-import services from "../../assets/Allservice.json";
-import ServicePathCard from "./ServicePathCards/ServicePathCard";
-import { Service } from "../Services/Services";
-import { useEffect } from "react";
+import { Link, useParams } from 'react-router-dom';
+import styles from './servicepath.module.css';
+import services from '../../assets/Allservice.json';
+import ServicePathCard from './ServicePathCards/ServicePathCard';
+import { Service } from '../Services/Services';
+import { useEffect } from 'react';
 
 export default function ServicePath() {
   const { path } = useParams();
@@ -19,7 +19,7 @@ export default function ServicePath() {
     <div className={styles.servicepath}>
       <div className={styles.path}>
         <Link to="/" className={styles.home}>
-          Home{" "}
+          Home{' '}
         </Link>
         / {path}
       </div>
@@ -27,14 +27,16 @@ export default function ServicePath() {
         className={styles.header}
         style={{
           backgroundImage: `url(${service.path.bgImg})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
         }}
       >
         <h1 className={styles.heading}>{path}</h1>
         <p>{service.path.tagline}</p>
-        <button>Contact Us</button>
+        <Link to="/">
+          <button>Contact Us</button>
+        </Link>
       </div>
       <h2>Most Popular {path}</h2>
       <div className={styles.cards}>
