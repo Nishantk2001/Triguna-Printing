@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import styles from "./navbar.module.css";
-import { scrollSpy } from "react-scroll";
+import { Link, scrollSpy } from "react-scroll";
 import { RxHamburgerMenu } from "react-icons/rx";
 import Sidebar from "./Sidebar/Sidebar";
 import Nav from "./Nav/Nav";
@@ -38,7 +38,17 @@ export default function Navbar() {
       </div>
       <div className={styles.section}>
         <Nav />
-        <button className={styles.btn}>Business Support</button>
+        <Link
+          activeClass="active"
+          to="contact"
+          spy={true}
+          smooth={false}
+          offset={-70}
+          duration={300}
+          className={styles.Link}
+        >
+          <button className={styles.btn}>Business Support</button>
+        </Link>
       </div>
       <button className={styles.burger} onClick={() => setIsOpen(true)}>
         <RxHamburgerMenu />
