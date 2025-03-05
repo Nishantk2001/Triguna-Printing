@@ -1,3 +1,4 @@
+import { Link } from 'react-scroll';
 import styles from './hero.module.css';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
@@ -29,7 +30,17 @@ export default function Hero() {
               }}
             />
           </span>
-          <span className={styles.btntext}>Get Started</span>
+          <Link
+            activeClass="active"
+            to="contact"
+            spy={true}
+            smooth={false}
+            offset={-70}
+            duration={300}
+            className={styles.Link}
+          >
+            <span className={styles.btntext}>Get Started</span>
+          </Link>
         </button>
       </div>
     </div>

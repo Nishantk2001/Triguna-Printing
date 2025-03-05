@@ -1,18 +1,42 @@
-@import '../../../index.css';
+@import "../../../index.css";
+
 .servicecard {
   display: flex;
   flex-direction: column;
-  max-width: 300px;
-  min-width: 250px;
-  transition: transform 0.2s ease-in-out;
+  width: 300px;
+  height: 300px;
   border: none;
   border-radius: 7px;
   overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
 .servicecard:hover {
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   transform: scale(1.02);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  background-color: #d9d9d9;
+}
+
+.imgcover {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: width 0.7s ease, height 0.7s ease, top 0.7s ease, left 0.7s ease,
+    border 0.7s ease, border-radius 0.7s ease, box-shadow 0.7s ease;
+}
+
+.servicecard:hover .imgcover {
+  width: 100px;
+  height: 100px;
+  border: 7px solid var(--primary-color);
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  border-radius: 50%;
+  box-shadow: rgba(96, 75, 74, 0.19) 0px 5px 5px;
+  z-index: 10;
 }
 
 .img {
@@ -20,18 +44,34 @@
   width: 100%;
   aspect-ratio: 4/3;
   background-color: #d9d9d9;
-  transition: all 0.5s ease-in-out;
+  background-size: cover;
+  background-position: center;
+  transform: scale(1);
+  border-radius: 0px;
+  transition: transform 0.7s ease-in-out, border-radius 0.7s ease-in-out;
 }
 
-.info {
+.servicecard:hover .imgcover .img {
+  transform: scale(1.04);
+  aspect-ratio: 1;
+  border-radius: 999px;
+}
+
+.servicecard .info {
   flex: 1;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
   padding: 30px;
   background-color: #ffffff;
   gap: 10px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 30%;
+  transition: all 0.7s ease-in-out;
 }
 
 .info h3 {
@@ -41,6 +81,7 @@
   line-height: 16.4px;
   letter-spacing: 1%;
   color: var(--heading-color);
+  margin: 0;
 }
 
 .info p {
@@ -49,4 +90,22 @@
   font-size: 12px;
   line-height: 14.06px;
   letter-spacing: 1%;
+  margin: 0;
+}
+
+.info h5 {
+  display: none;
+  margin: 0;
+}
+
+.servicecard:hover .info {
+  height: 80%;
+  box-shadow: inset 0px 5px 5px rgba(96, 75, 74, 0.19);
+  background: linear-gradient(135deg, #ffffff, var(--primary-color) 75%);
+  border-radius: 80px 32px 0 0;
+}
+
+.servicecard:hover .info h5 {
+  display: block;
+  text-align: center;
 }

@@ -1,4 +1,4 @@
-@import "../../index.css";
+@import '../../index.css';
 .servicepath {
   background-color: #f0f0f0;
   display: flex;
@@ -64,6 +64,19 @@
   border-radius: 10px;
   max-width: 170px;
   margin-top: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.header button:hover {
+  transform: scale(1.05);
+  font-size: 14px;
+  background-color: var(--accent-color);
+  border: none;
+  border-radius: 10px;
+  max-width: 170px;
+  margin-top: 10px;
+  cursor: pointer;
 }
 
 .servicepath h2 {
