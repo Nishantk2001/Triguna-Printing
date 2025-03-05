@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import styles from "./navbar.module.css";
 import { scrollSpy } from "react-scroll";
 import { RxHamburgerMenu } from "react-icons/rx";
-import Sidebar from "./SIdebar/Sidebar";
+import Sidebar from "./Sidebar/Sidebar";
 import Nav from "./Nav/Nav";
 
 export default function Navbar() {
@@ -16,7 +16,7 @@ export default function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 60 && window.innerWidth > 768) {
+      if (window.scrollY > 55 && window.innerWidth > 768) {
         setIsSticky(true);
       } else if (window.innerWidth <= 768) {
         setIsSticky(true);
