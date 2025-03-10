@@ -1,5 +1,5 @@
 import { ChangeEvent, FormEvent, useState } from "react";
-import { FaCheck, FaSyncAlt } from "react-icons/fa";
+import { FaCheck } from "react-icons/fa";
 import styles from "./form.module.css";
 import MessageBox from "../../MessageBox/MessageBox";
 interface FormData {
@@ -67,17 +67,11 @@ export default function Form(): JSX.Element {
     setErrors({});
     setStatus("loading");
 
-    // Simulate form submission process
     setTimeout(() => {
       setStatus("success");
       setIsSubmit(true);
-
-      // Wait before resetting form and status
-      setTimeout(() => {
-        setStatus("default");
-        setFormData({ name: "", email: "", subject: "", message: "" }); // Move reset inside timeout
-      }, 2000);
-    }, 5000);
+      setFormData({ name: "", email: "", subject: "", message: "" });
+    }, 3000);
 
     console.log("Form Data Submitted:", formData);
   };
@@ -151,18 +145,20 @@ export default function Form(): JSX.Element {
             <span className={styles.submit}>Submit</span>
           )}
           {status === "loading" && (
-            <span className={styles.loading}>
-              <FaSyncAlt className={styles.spinner} size={25} />
-            </span>
+            <span className={styles.loading}>Loading...</span>
           )}
           {status === "success" && (
             <span className={styles.check}>
-              <FaCheck />
+              <FaCheck size={20} />
             </span>
           )}
         </button>
       </form>
-      {isSubmit && <MessageBox submit={setIsSubmit} />}
+      {isSubmit && (
+        <div className={styles.modelOverlay}>
+          <MessageBox submit={setIsSubmit} status={setStatus} />
+        </div>
+      )}
     </div>
   );
 }

@@ -122,44 +122,26 @@
 .button {
   position: relative;
   max-width: 170px;
-  height: 52px;
+  height: 48px;
   cursor: pointer;
   transition: 0.3s ease-in-out;
   margin-top: 10px;
-}
-
-.icon {
-  background-color: white;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 120px;
-  height: 40px;
-  font-size: 16px;
-  font-weight: bold;
-  color: white;
-  background: #007bff;
+  border-radius: 10px;
   border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background 0.3s ease, transform 0.3s ease;
-  overflow: hidden;
+  outline: none;
+  background-color: var(--primary-color);
+  color: #ffffff;
+}
+.button.default:hover {
+  background-color: #149dd8;
 }
 
 .button:disabled {
   cursor: not-allowed;
 }
 
-.loading,
-.check {
-  display: none;
-}
-
 .button.loading {
-  background: #ff9800;
+  background: #159bd4;
 }
 
 .button.loading .loading {
@@ -171,7 +153,7 @@
 }
 
 .button.success {
-  background: #28a745;
+  background: #ea4b95;
 }
 
 .button.success .check {
@@ -181,17 +163,19 @@
 .button.success .submit {
   display: none;
 }
-
-.spinner {
-  animation: spin 1s linear infinite;
+.modelOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(4px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 49;
 }
-
-@keyframes spin {
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
 @media (max-width: 768px) {
   /* .inputs {
     flex-direction: column;
