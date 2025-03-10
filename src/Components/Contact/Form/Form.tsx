@@ -1,5 +1,5 @@
 import { ChangeEvent, FormEvent, useState } from "react";
-import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import { FaCheck } from "react-icons/fa";
 import styles from "./form.module.css";
 import MessageBox from "../../MessageBox/MessageBox";
 interface FormData {
@@ -23,6 +23,7 @@ export default function Form(): JSX.Element {
     message: "",
   });
   const [errors, setErrors] = useState<FormErrors>({});
+  const [status, setStatus] = useState("default");
   const [isSubmit, setIsSubmit] = useState(false);
 
   const handleChange = (
@@ -54,15 +55,25 @@ export default function Form(): JSX.Element {
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>): void => {
     e.preventDefault();
+
+    // Run validation first
     const validationErrors = validate();
     if (Object.keys(validationErrors).length > 0) {
       setErrors(validationErrors);
       return;
     }
+
+    // Reset errors & set status to loading
     setErrors({});
-    setIsSubmit(true);
+    setStatus("loading");
+
+    setTimeout(() => {
+      setStatus("success");
+      setIsSubmit(true);
+      setFormData({ name: "", email: "", subject: "", message: "" });
+    }, 3000);
+
     console.log("Form Data Submitted:", formData);
-    setFormData({ name: "", email: "", subject: "", message: "" });
   };
 
   return (
@@ -124,18 +135,30 @@ export default function Form(): JSX.Element {
             required
           ></textarea>
         </div>
-        <button className={styles.customButton}>
-          <span className={styles.icon}>
-            <ArrowForwardIcon
-              sx={{
-                fontSize: "30px",
-              }}
-            />
-          </span>
-          <span className={styles.btntext}>Get Started</span>
+
+        <button
+          className={`${styles.button} ${styles[status]}`}
+          type="submit"
+          disabled={status === "loading"}
+        >
+          {status === "default" && (
+            <span className={styles.submit}>Submit</span>
+          )}
+          {status === "loading" && (
+            <span className={styles.loading}>Loading...</span>
+          )}
+          {status === "success" && (
+            <span className={styles.check}>
+              <FaCheck size={20} />
+            </span>
+          )}
         </button>
       </form>
-      {isSubmit && <MessageBox submit={setIsSubmit} />}
+      {isSubmit && (
+        <div className={styles.modelOverlay}>
+          <MessageBox submit={setIsSubmit} status={setStatus} />
+        </div>
+      )}
     </div>
   );
 }

@@ -16,7 +16,7 @@ export default function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 60 && window.innerWidth > 768) {
+      if (window.scrollY > 55 && window.innerWidth > 768) {
         setIsSticky(true);
       } else if (window.innerWidth <= 768) {
         setIsSticky(true);

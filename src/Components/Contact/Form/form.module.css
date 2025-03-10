@@ -119,48 +119,63 @@
   color: #948e8e;
 }
 
-.customButton {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 20px;
-  border: none;
-  border-radius: 50px;
-  background-color: #000000;
+.button {
   position: relative;
-  max-width: 211px;
-  height: 52px;
+  max-width: 170px;
+  height: 48px;
   cursor: pointer;
   transition: 0.3s ease-in-out;
   margin-top: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background-color: var(--primary-color);
+  color: #ffffff;
+}
+.button.default:hover {
+  background-color: #149dd8;
 }
 
-.icon {
-  background-color: white;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
+.button:disabled {
+  cursor: not-allowed;
+}
+
+.button.loading {
+  background: #159bd4;
+}
+
+.button.loading .loading {
+  display: block;
+}
+
+.button.loading .submit {
+  display: none;
+}
+
+.button.success {
+  background: #ea4b95;
+}
+
+.button.success .check {
+  display: block;
+}
+
+.button.success .submit {
+  display: none;
+}
+.modelOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(4px);
   display: flex;
-  align-items: center;
   justify-content: center;
-  font-size: 16px;
-  position: absolute;
-  left: 6px;
+  align-items: center;
+  z-index: 49;
 }
-
-.btntext {
-  background-color: var(--accent-color);
-  padding: 16.5px 26px;
-  border-radius: 50px;
-  text-align: center;
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 18.75px;
-  letter-spacing: 1%;
-  color: black;
-}
-
 @media (max-width: 768px) {
   /* .inputs {
     flex-direction: column;
