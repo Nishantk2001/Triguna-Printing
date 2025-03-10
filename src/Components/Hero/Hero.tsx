@@ -21,14 +21,11 @@ export default function Hero() {
           printing, we ensure precision, durability, and vibrant designs that
           leave a lasting impression.
         </p>
-
+        
+        <div className={styles.container}>
         <button className={styles.customButton}>
           <span className={styles.icon}>
-            <ArrowForwardIcon
-              sx={{
-                fontSize: '30px',
-              }}
-            />
+          <span className={`${styles.iconarrow} ${styles.arrow}`}></span>
           </span>
           <Link
             activeClass="active"
@@ -38,10 +35,11 @@ export default function Hero() {
             offset={-70}
             duration={300}
             className={styles.Link}
-          >
+            >
             <span className={styles.btntext}>Get Started</span>
           </Link>
         </button>
+              </div>
       </div>
     </div>
   );
