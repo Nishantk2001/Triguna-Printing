@@ -132,7 +132,7 @@ export default function Form(): JSX.Element {
               }}
             />
           </span>
-          <span className={styles.btntext}>Get Started</span>
+          <span className={styles.btntext}>Submit</span>
         </button>
       </form>
       {isSubmit && <MessageBox submit={setIsSubmit} />}

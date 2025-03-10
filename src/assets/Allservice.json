@@ -322,44 +322,29 @@
         {
           "cardId": 801,
           "productName": "Die-Cut Stickers",
-          "cardImg": "https://example.com/diecut-sticker.jpg",
-          "price": "₹20 each for 100 pieces",
+          "cardImg": "./Images/diecut.jpg",
           "description": "Custom shaped stickers that perfectly represent your brand."
         },
         {
           "cardId": 802,
           "productName": "Vinyl Stickers",
-          "cardImg": "https://example.com/vinyl-sticker.jpg",
+          "cardImg": "./Images/vinylsticker.jpg",
           "price": "₹18 each for 100 pieces",
           "description": "Durable vinyl stickers suitable for outdoor use."
         },
         {
           "cardId": 803,
           "productName": "Clear Stickers",
-          "cardImg": "https://example.com/clear-sticker.jpg",
+          "cardImg": "./Images/clearsticker.png",
           "price": "₹22 each for 100 pieces",
           "description": "Transparent stickers that blend seamlessly with any surface."
         },
         {
           "cardId": 804,
-          "productName": "Kiss-Cut Stickers",
-          "cardImg": "https://example.com/kisscut-sticker.jpg",
-          "price": "₹25 each for 100 pieces",
-          "description": "Easy to peel and apply, perfect for promotions."
-        },
-        {
-          "cardId": 805,
           "productName": "Holographic Stickers",
-          "cardImg": "https://example.com/holographic-sticker.jpg",
+          "cardImg": "./Images/holographic.jpg",
           "price": "₹30 each for 100 pieces",
           "description": "Eye-catching holographic effects for a dynamic look."
-        },
-        {
-          "cardId": 806,
-          "productName": "Custom Die-Cut Shapes",
-          "cardImg": "https://example.com/custom-diecut-sticker.jpg",
-          "price": "₹35 each for 100 pieces",
-          "description": "Personalized sticker shapes to match your unique brand identity."
         }
       ]
     }
