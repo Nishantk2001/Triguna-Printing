@@ -1,4 +1,4 @@
-@import '../../index.css';
+@import "../../index.css";
 
 /* Main Contact Bar Container */
 .contactbar {
@@ -7,7 +7,7 @@
   align-items: stretch;
   background: #f8f8f8;
   width: 100%;
-  min-height: 55px;
+  min-height: 60px;
   height: auto;
   padding-inline: 8%;
   transition: padding-inline 0.3s ease-in-out;
