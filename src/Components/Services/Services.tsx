@@ -8,7 +8,7 @@ export interface ICards {
   cardId: number;
   productName: string;
   cardImg: string;
-  price: string;
+  price?: string;
   description: string;
 }
 export interface IPath {
@@ -67,7 +67,7 @@ export default function Services() {
         <div className={styles.cardbox}>
           {visibleServices.map((service: Service) => (
             <div key={service.id} className={styles.cards}>
-              <Link to={`/${service.name}`} style={{ textDecoration: "none" }}>
+              <Link to={`/${service.name}`} style={{ textDecoration: "none" , display:'flex', alignItems:'center' , justifyContent:'center'}}>
                 <Card service={service} />
               </Link>
             </div>

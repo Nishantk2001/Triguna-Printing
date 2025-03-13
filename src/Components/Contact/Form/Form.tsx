@@ -1,6 +1,7 @@
 import { ChangeEvent, FormEvent, useState } from "react";
 import { FaCheck } from "react-icons/fa";
 import styles from "./form.module.css";
+import emailjs from 'emailjs-com';
 import MessageBox from "../../MessageBox/MessageBox";
 interface FormData {
   name: string;
@@ -53,28 +54,47 @@ export default function Form(): JSX.Element {
     return newErrors;
   };
 
-  const handleSubmit = (e: FormEvent<HTMLFormElement>): void => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    // Run validation first
     const validationErrors = validate();
     if (Object.keys(validationErrors).length > 0) {
       setErrors(validationErrors);
       return;
     }
 
-    // Reset errors & set status to loading
     setErrors({});
     setStatus("loading");
 
-    setTimeout(() => {
-      setStatus("success");
-      setIsSubmit(true);
-      setFormData({ name: "", email: "", subject: "", message: "" });
-    }, 3000);
-
-    console.log("Form Data Submitted:", formData);
+    await sendEmail();
+    setIsSubmit(true);
+    setFormData({ name: "", email: "", subject: "", message: "" });
   };
+
+
+  const sendEmail = async () => {
+    try {
+      const response = await emailjs.send(
+        'YOUR_SERVICE_ID',
+        'YOUR_TEMPLATE_ID',
+        {
+          to_name: 'Apurva Arts',
+          from_name: formData.name,
+          subject: formData.subject,
+          message: formData.message,
+          reply_to: formData.email,
+        },
+        'YOUR_PUBLIC_KEY'
+      );
+  
+      console.log('Email sent successfully:', response);
+      setStatus("success");
+    } catch (error) {
+      console.error('Error sending email:', error);
+      setStatus("error");
+    }
+  };
+  
 
   return (
     <div className={styles.formSection}>
@@ -92,7 +112,7 @@ export default function Form(): JSX.Element {
             <input
               type="text"
               name="name"
-              placeholder="name"
+              placeholder="Name"
               value={formData.name}
               onChange={handleChange}
               required
@@ -153,6 +173,9 @@ export default function Form(): JSX.Element {
             </span>
           )}
         </button>
+         {status === "error" && (
+            <p>Failed to send email. Try again.</p>
+          )}
       </form>
       {isSubmit && (
         <div className={styles.modelOverlay}>

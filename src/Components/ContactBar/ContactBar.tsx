@@ -14,7 +14,7 @@ export default function ContactBar() {
         </p>
         <p className={styles.contactInfo}>
           <MdEmail className={styles.icon} size={20} />
-          <span>apurvaarts.chd@gmail.com</span>
+          <span>apurvaartschd@gmail.com</span>
         </p>
       </div>
 
@@ -22,7 +22,7 @@ export default function ContactBar() {
       <div className={styles.menubar}>
         <p className={styles.contactInfo}>
           <FaLocationDot className={styles.icon} size={20} />
-          <span>25/15 Sector-42 Atawa Chandigarh</span>
+          <span>25/15 Sector-42 Atawa, Chandigarh</span>
         </p>
       </div>
     </div>

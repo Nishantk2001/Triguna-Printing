@@ -4,7 +4,6 @@
     "name": "Business Cards Printing",
     "description": "Premium quality business cards with custom designs.",
     "imageUrl": "./Images/Business-cards.jpg",
-
     "path": {
       "tagline": "Make a lasting first impression",
       "bgImg": "./Images/backgroundService.png",

@@ -1,6 +1,5 @@
 import { Link } from 'react-scroll';
 import styles from './hero.module.css';
-import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 export default function Hero() {
   return (

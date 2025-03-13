@@ -7,7 +7,7 @@ export default function ContactCard() {
         <span>Contact</span>
         <div className={styles.contact}>
           <p>Phone : +91 94170 50564 </p>
-          <p>Email : apurvaarts.chd@gmail.com </p>
+          <p>Email : apurvaartschd@gmail.com </p>
         </div>
       </div>
       <div className={styles.info}>
@@ -20,7 +20,7 @@ export default function ContactCard() {
       <div className={styles.info}>
         <span>Address</span>
         <div className={styles.contact}>
-          <p>25/15 Sector-42 Atawa Chandigarh</p>
+          <p>25/15 Sector-42 Atawa, Chandigarh</p>
           <GoogleMaps />
         </div>
       </div>

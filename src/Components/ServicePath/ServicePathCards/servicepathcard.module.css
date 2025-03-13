@@ -3,7 +3,7 @@
 .servicecard {
   display: flex;
   flex-direction: column;
-  width: 300px;
+  width: 280px;
   height: 300px;
   border: none;
   border-radius: 7px;
