@@ -3,8 +3,7 @@
   display: flex;
   align-items: center;
   padding-block: 150px;
-  /* background-color: var(--primary-color); */
-  background-image: url("homebg.png");
+  background-image: url("/homebg.png");
   background-repeat: no-repeat;
   background-size: cover;
   padding-left: 7%;
