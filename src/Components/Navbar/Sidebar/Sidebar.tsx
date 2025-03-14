@@ -1,5 +1,5 @@
 import Nav from '../Nav/Nav';
-import styles from './Sidebar.module.css';
+import styles from './sidebar.module.css';
 
 interface SideBarProps {
   isOpen: boolean;
