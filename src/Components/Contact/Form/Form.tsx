@@ -1,7 +1,7 @@
 import { ChangeEvent, FormEvent, useState } from "react";
 import { FaCheck } from "react-icons/fa";
 import styles from "./form.module.css";
-import emailjs from 'emailjs-com';
+import emailjs from '@emailjs/browser';
 import MessageBox from "../../MessageBox/MessageBox";
 interface FormData {
   name: string;
@@ -66,25 +66,26 @@ export default function Form(): JSX.Element {
     setErrors({});
     setStatus("loading");
 
-    await sendEmail();
+    await sendEmail(formData);
     setIsSubmit(true);
     setFormData({ name: "", email: "", subject: "", message: "" });
   };
 
 
-  const sendEmail = async () => {
+  const sendEmail = async (formData:FormData) => {
     try {
+      emailjs.init('SEOl7XMwPv_mBQRY9');
+ 
       const response = await emailjs.send(
-        'YOUR_SERVICE_ID',
-        'YOUR_TEMPLATE_ID',
+        'service_qn2zd2g',
+        'template_mv37nm5',
         {
           to_name: 'Apurva Arts',
           from_name: formData.name,
           subject: formData.subject,
           message: formData.message,
           reply_to: formData.email,
-        },
-        'YOUR_PUBLIC_KEY'
+        }
       );
   
       console.log('Email sent successfully:', response);
@@ -94,6 +95,7 @@ export default function Form(): JSX.Element {
       setStatus("error");
     }
   };
+  
   
 
   return (
@@ -173,13 +175,10 @@ export default function Form(): JSX.Element {
             </span>
           )}
         </button>
-         {status === "error" && (
-            <p>Failed to send email. Try again.</p>
-          )}
       </form>
       {isSubmit && (
         <div className={styles.modelOverlay}>
-          <MessageBox submit={setIsSubmit} status={setStatus} />
+          <MessageBox submit={setIsSubmit} status={setStatus} stat={status} />
         </div>
       )}
     </div>
