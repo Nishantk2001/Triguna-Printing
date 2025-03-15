@@ -26,6 +26,7 @@ export default function Form(): JSX.Element {
   const [errors, setErrors] = useState<FormErrors>({});
   const [status, setStatus] = useState("default");
   const [isSubmit, setIsSubmit] = useState(false);
+  const [errorMessage, setErrorMessage] = useState('');
 
   const handleChange = (
     e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -58,46 +59,56 @@ export default function Form(): JSX.Element {
     e.preventDefault();
 
     const validationErrors = validate();
-    if (Object.keys(validationErrors).length > 0) {
+    if (Object.keys(validationErrors).length === 0) { 
+      console.log('Form Has been submitted',formData);
+      setErrors({});
+      setStatus("loading"); 
+      await sendEmail(formData);
+      setIsSubmit(true);
+    }else {
       setErrors(validationErrors);
       return;
     }
-
-    setErrors({});
-    setStatus("loading");
-
-    await sendEmail(formData);
-    setIsSubmit(true);
     setFormData({ name: "", email: "", subject: "", message: "" });
   };
 
 
-  const sendEmail = async (formData:FormData) => {
-    try {
-      emailjs.init('SEOl7XMwPv_mBQRY9');
- 
-      const response = await emailjs.send(
-        'service_qn2zd2g',
-        'template_mv37nm5',
-        {
-          to_name: 'Apurva Arts',
-          from_name: formData.name,
-          subject: formData.subject,
-          message: formData.message,
-          reply_to: formData.email,
-        }
-      );
+  const sendEmail =  (formData:FormData) => {
+         emailjs.send(
+          'service_qn2zd2g',
+          'template_mv37nm5',
+          {
+            name: formData.name,
+            email: formData.email,
+            subject: formData.subject,
+            message: formData.message,
+          },
+          'SEOl7XMwPv_mBQRY9'
+        )
+        .then(() => {
+          setStatus("success");
+          setErrorMessage('');
+        })
+        .catch((error) => {
+          console.error('Failed to send email:', error);
+          setStatus("error");
+          setErrorMessage(
+            'There was an error sending your message. Please try again later.'
+          );
+          if (error.message.includes('Network Error')) {
+            setErrorMessage(
+              'Network error. Please check your internet connection.'
+            );
+          } else if (error.message.includes('403')) {
+            setErrorMessage(
+              'Forbidden: Access denied. Please check your API keys.'
+            );
+          } else if (error.message.includes('timeout')) {
+            setErrorMessage('Request timed out. Please try again.');
+          }
+        })
+      };
   
-      console.log('Email sent successfully:', response);
-      setStatus("success");
-    } catch (error) {
-      console.error('Error sending email:', error);
-      setStatus("error");
-    }
-  };
-  
-  
-
   return (
     <div className={styles.formSection}>
       <div className={styles.firstline}>
@@ -178,7 +189,7 @@ export default function Form(): JSX.Element {
       </form>
       {isSubmit && (
         <div className={styles.modelOverlay}>
-          <MessageBox submit={setIsSubmit} status={setStatus} stat={status} />
+          <MessageBox submit={setIsSubmit} status={setStatus} stat={status}  errorMessage={errorMessage} />
         </div>
       )}
     </div>

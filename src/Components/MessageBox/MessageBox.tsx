@@ -5,9 +5,10 @@ interface MessageBoxProp {
   submit: React.Dispatch<React.SetStateAction<boolean>>;
   status: React.Dispatch<React.SetStateAction<string>>;
   stat:string;
+  errorMessage:string;
 }
 
-const MessageBox: React.FC<MessageBoxProp> = ({ submit, status , stat }) => {
+const MessageBox: React.FC<MessageBoxProp> = ({ submit, status , stat,  errorMessage }) => {
   const handleClick = () => {
     submit(false);
     status("default");
@@ -16,7 +17,7 @@ const MessageBox: React.FC<MessageBoxProp> = ({ submit, status , stat }) => {
     <div className={styles.model}>
       <div className={styles.text}>
         {stat === "error" ? (
-          <p>Failed to send email. Try again.</p>
+          <p>{errorMessage}</p>
         )
         :
        (
