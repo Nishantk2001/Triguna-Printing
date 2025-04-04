@@ -1,7 +1,6 @@
 import { ChangeEvent, FormEvent, useState } from "react";
 import { FaCheck } from "react-icons/fa";
 import styles from "./form.module.css";
-import emailjs from '@emailjs/browser';
 import MessageBox from "../../MessageBox/MessageBox";
 interface FormData {
   name: string;
@@ -73,41 +72,44 @@ export default function Form(): JSX.Element {
   };
 
 
-  const sendEmail =  (formData:FormData) => {
-         emailjs.send(
-          'service_qn2zd2g',
-          'template_mv37nm5',
-          {
-            name: formData.name,
-            email: formData.email,
-            subject: formData.subject,
-            message: formData.message,
-          },
-          'SEOl7XMwPv_mBQRY9'
-        )
-        .then(() => {
-          setStatus("success");
-          setErrorMessage('');
-        })
-        .catch((error) => {
-          console.error('Failed to send email:', error);
-          setStatus("error");
+  const sendEmail = (formDataObj: FormData) => {
+    const url = "https://script.google.com/macros/s/AKfycbwRHqIWBejDQyP12cXdJMQWHuZDmIQdOHUaXj2LFB5QZ6E_LbM732oqAd37GitKbKf-Lw/exec"
+
+    fetch(url, {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: (`Name=${formDataObj.name}&Email=${formDataObj.email}&Subject=${formDataObj.subject}&Message=${formDataObj.message}`),
+    })
+      .then((res) => {
+        if (!res.ok) {
+          throw new Error('Network response was not ok');
+        }
+        setErrorMessage('');
+        return res.text();
+      })
+      .then((data) => {
+        console.log(data);
+      })
+      .catch((error) => {
+        console.error('Failed to send email:', error);
+        setStatus("error");
+        setErrorMessage(
+          'There was an error sending your message. Please try again later.'
+        );
+        if (error.message.includes('Network Error')) {
           setErrorMessage(
-            'There was an error sending your message. Please try again later.'
+            'Network error. Please check your internet connection.'
           );
-          if (error.message.includes('Network Error')) {
-            setErrorMessage(
-              'Network error. Please check your internet connection.'
-            );
-          } else if (error.message.includes('403')) {
-            setErrorMessage(
-              'Forbidden: Access denied. Please check your API keys.'
-            );
-          } else if (error.message.includes('timeout')) {
-            setErrorMessage('Request timed out. Please try again.');
-          }
-        })
-      };
+        } else if (error.message.includes('403')) {
+          setErrorMessage(
+            'Forbidden: Access denied. Please check your API keys.'
+          );
+        } else if (error.message.includes('timeout')) {
+          setErrorMessage('Request timed out. Please try again.');
+        }
+      })
+  };
+  
   
   return (
     <div className={styles.formSection}>
